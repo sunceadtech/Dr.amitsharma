@@ -1,0 +1,288 @@
+import React from "react";
+import { ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
+function Osteoporosis() {
+  return (
+    <>
+      <Helmet>
+        <title>
+          Best Osteoporosis Treatment In Ghazaibad | Dramitshrmaortho
+        </title>
+        <meta
+          name="description"
+          content="Best osteoporosis care in Ghaziabad for weak bones and fracture prevention. Dr. Amit Sharma offers advanced diagnosis, treatment and lifestyle guidance."
+        />
+        <meta
+          name="keywords"
+          content="Best Osteoporosis Treatment & Bone Health Care in Ghaziabad,Best Osteoporosis Treatment & Bone Health Care in Indrpuram"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://dramitsharmaortho.com/service-detail/osteoporosis"
+        />
+      </Helmet>
+
+      {/* Hero Section */}
+      <div className="relative w-full h-[500px] overflow-hidden">
+        <img
+          src="/images/service.webp"
+          alt="Osteoporosis operation"
+          className="absolute inset-0 w-full h-full object-cover"
+          width="1920"
+          height="500"
+          loading="eager"
+        />
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="relative z-10 h-full flex items-center justify-start">
+          <div className="max-w-3xl px-4 md:px-32 text-center md:text-left">
+            <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-snug">
+              Best Osteoporosis Treatment & Bone Health Care in Ghaziabad
+            </h1>
+            <div className="flex flex-wrap justify-center md:justify-start items-center gap-1 sm:gap-2 text-sm text-white uppercase">
+              <Link to="/" className="hover:underline font-bold text-white/90">
+                Home
+              </Link>
+              <ChevronRight className="w-4 h-4" />
+              <Link
+                to="/service"
+                className="hover:underline font-bold text-white/90"
+              >
+                Services
+              </Link>
+              <ChevronRight className="w-4 h-4" />
+              <span className="text-white/80 font-bold text-base">
+                Osteoporosis
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Content Section */}
+      <div className="py-10 bg-white">
+        <div className="max-w-7xl mx-auto lg:flex lg:gap-8 px-2 sm:px-4">
+          {/* Content Area */}
+          <div className="lg:w-3/4 w-full">
+            <div className="rounded overflow-hidden shadow-md">
+              <img
+                src="/images/osteo.webp"
+                alt="Osteoporosis illustration"
+                className="w-full object-cover"
+                width="1024"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+
+            <div className="pt-6 space-y-6 text-gray-700 text-[15px]">
+              <h2 className="text-3xl font-bold">
+                Understanding Osteoporosis: Prevention and Management
+              </h2>
+              <p>
+                Osteoporosis is a condition where bones become weak and brittle,
+                ieasing the risk of fractures. It often develops silently over
+                years and is most common among older adults, especially
+                postmenopausal women. Early detection and effective management
+                can prevent complications and enhance bone health.
+              </p>
+
+              <h3 className="text-2xl font-semibold">
+                Causes and Risk Factors
+              </h3>
+              <ul className="list-disc list-inside space-y-2">
+                <li>Age-related bone loss, particularly after menopause.</li>
+                <li>Low calcium or vitamin D intake.</li>
+                <li>Family history of osteoporosis or fractures.</li>
+                <li>
+                  Sedentary lifestyle and lack of weight-bearing exercise.
+                </li>
+                <li>
+                  Smoking, excessive alcohol use, and certain medications.
+                </li>
+              </ul>
+
+              <p className="text-2xl font-semibold">Signs and Symptoms</p>
+              <ul className="list-disc list-inside space-y-2">
+                <li>Back pain caused by fractured or collapsed vertebrae.</li>
+                <li>Loss of height over time.</li>
+                <li>Stooped posture or easily occurring bone fractures.</li>
+              </ul>
+
+              <p className="text-2xl font-semibold">Diagnosis</p>
+              <p>
+                Osteoporosis is diagnosed using bone density tests like DEXA
+                (dual-energy X-ray absorptiometry), which measure bone mass and
+                assess fracture risk.
+              </p>
+
+              <p className="text-2xl font-semibold">Treatment and Management</p>
+              <ul className="list-disc list-inside space-y-2">
+                <li>
+                  <strong>Medications:</strong> Bisphosphonates, hormone-related
+                  therapy, and others that slow bone loss or stimulate bone
+                  formation.
+                </li>
+                <li>
+                  <strong>Nutrition:</strong> Ensure a diet rich in calcium and
+                  vitamin D to support bone strength.
+                </li>
+                <li>
+                  <strong>Exercise:</strong> Regular weight-bearing and
+                  resistance exercises maintain bone and muscle health.
+                </li>
+                <li>
+                  <strong>Lifestyle:</strong> Avoid smoking, reduce alcohol, and
+                  ensure home safety to prevent falls.
+                </li>
+              </ul>
+
+              <p className="text-2xl font-semibold">Prevention Tips</p>
+              <ul className="list-disc list-inside space-y-2">
+                <li>Adopt bone-healthy habits from an early age.</li>
+                <li>Maintain daily calcium and vitamin D intake.</li>
+                <li>
+                  Engage in regular physical activities like walking or yoga.
+                </li>
+                <li>Limit salt and caffeine that hinder calcium absorption.</li>
+              </ul>
+
+              <hr className="my-6" />
+              <div className="bg-blue-50 p-6 rounded text-center">
+                <p className="text-xl font-bold mb-2">
+                  Concerned About Bone Health? Schedule a Consultation
+                </p>
+                <Link
+                  to="/contact"
+                  className="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700"
+                >
+                  Contact Dr. Amit Sharma
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Sidebar */}
+          <aside className="lg:w-1/4 w-full mt-10 lg:mt-0 space-y-6 mb-6">
+            {/* Services List */}
+            <div className="bg-purple-700 text-white p-4 min-h-[400px] md:min-h-[550px] rounded shadow-sm">
+              <h3 className="text-lg font-semibold text-slate-100 mb-4 md:text-3xl text-center">
+                Our Services
+              </h3>
+              <ul className="text-sm md:text-md font-bold divide-y divide-purple-500 text-center">
+                <li className="py-3">
+                  <Link
+                    to="/service"
+                    className="hover:underline inline-block w-full"
+                  >
+                    View All Services by Dr. Amit Sharma
+                  </Link>
+                </li>
+                <li className="py-3">
+                  <Link
+                    to="/service-detail/knee-replacement"
+                    className="hover:underline inline-block w-full"
+                  >
+                    Learn About Knee Replacement
+                  </Link>
+                </li>
+                <li className="py-3">
+                  <Link
+                    to="/service-detail/hip-replacement"
+                    className="hover:underline inline-block w-full"
+                  >
+                    Explore Hip Replacement Options
+                  </Link>
+                </li>
+                <li className="py-3">
+                  <Link
+                    to="/service-detail/arthroscopy"
+                    className="hover:underline inline-block w-full"
+                  >
+                    Arthroscopy Procedures Explained
+                  </Link>
+                </li>
+                <li className="py-3">
+                  <Link
+                    to="/service-detail/acl-and-pcl-reconstruction"
+                    className="hover:underline inline-block w-full"
+                  >
+                    ACL & PCL Reconstruction Services
+                  </Link>
+                </li>
+                <li className="py-3">
+                  <Link
+                    to="/service-detail/sports-injury"
+                    className="hover:underline inline-block w-full"
+                  >
+                    Treating Sports Injuries
+                  </Link>
+                </li>
+                <li className="py-3">
+                  <Link
+                    to="/service-detail/arthritis"
+                    className="hover:underline inline-block w-full"
+                  >
+                    Arthritis Management Techniques
+                  </Link>
+                </li>
+                <li className="py-3">
+                  <Link
+                    to="/service-detail/osteoporosis"
+                    className="hover:underline inline-block w-full"
+                  >
+                    Osteoporosis Treatments
+                  </Link>
+                </li>
+                <li className="py-3">
+                  <Link
+                    to="/service-detail/minimal-invasive-complex-trauma-surgery"
+                    className="hover:underline inline-block w-full"
+                  >
+                    Minimally Invasive Trauma Surgery Info
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* OPD Timings */}
+            <div className="bg-white text-gray-800 min-h-[350px] p-4 rounded shadow-sm border">
+              <p className="text-lg font-semibold mb-3">OPD TIMINGS</p>
+              <ul className="text-sm space-y-2">
+                <li className="flex justify-between">
+                  <span>MON to SAT</span>
+                  <span>9:00 AM - 2:00 PM</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>MON to SAT</span>
+                  <span>5:00 PM - 7:00 PM</span>
+                </li>
+                <li className="text-center text-xs mt-2">
+                  <p className="font-medium">
+                    Yashoda Super Speciality Hospital
+                  </p>
+                  Ghaziabad <br />
+                  Call @ 8750056560
+                </li>
+                <li className="flex justify-between mt-4">
+                  <span>MON to SAT</span>
+                  <span>7:00 PM - 9:00 PM</span>
+                </li>
+                <li className="text-center text-xs mt-2">
+                  <p className="font-medium">City Clinic, Krishna Nagar</p>
+                  (Opp. Swarn Cinema, near Surya Hospital), Ghaziabad <br />
+                  Call @ 8826629486
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Osteoporosis;
