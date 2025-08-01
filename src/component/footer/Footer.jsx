@@ -26,7 +26,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           <div>
             <img
-              src="https://www.dramitsharma.info/drassets/img/footer.png"
+              src="/images/logo.png"
               alt="Dr. Amit Sharma Logo - Orthopedic Surgeon"
               className="mb-4 w-40"
               loading="lazy"
@@ -119,7 +119,7 @@ export default function Footer() {
                 ["knee-replacement", "Knee Replacement"],
                 ["hip-replacement", "Hip Replacement"],
                 ["arthroscopy", "Arthroscopy"],
-                ["acl-and-pcl-reconstruction", "ACL/PCL Reconstruction"],
+                ["acl-reconstruction", "ACL/PCL Reconstruction"],
                 ["sports-injury", "Sports Injury"],
                 ["arthritis", "Arthritis Care"],
                 ["osteoporosis", "Osteoporosis"],
@@ -130,7 +130,7 @@ export default function Footer() {
               ].map(([slug, label]) => (
                 <li key={slug}>
                   <Link
-                    to={`/service-detail/${slug}`}
+                    to={`/${slug}`}
                     className={`active:text-yellow-400 ${hoverLink}`}
                     aria-label={`Learn about ${label}`}
                   >
@@ -148,7 +148,7 @@ export default function Footer() {
 
             <div className="mb-4">
               <p className="font-semibold text-white">
-                Yashoda Super Speciality Hospital
+                Orthopedic Super Speciality Hospital
               </p>
               <ul className="text-gray-300">
                 <li>Mon–Sat: 9 AM – 2 PM</li>
@@ -161,7 +161,7 @@ export default function Footer() {
 
             <div>
               <p className="font-semibold text-white">
-                City Clinic, Krishna Nagar
+                Orthopedic Clinic, Ghazaibad
               </p>
               <ul className="text-gray-300">
                 <li>Mon–Sat: 7 PM – 9 PM</li>

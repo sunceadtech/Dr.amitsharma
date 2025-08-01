@@ -1,35 +1,29 @@
-import { writeFile } from "fs/promises";
-import { SitemapStream, streamToPromise } from "sitemap";
+const { SitemapStream, streamToPromise } = require("sitemap");
+const { createWriteStream } = require("fs");
 
-// Set your domain
 const sitemap = new SitemapStream({ hostname: "https://dramitsharmaortho.com" });
 
-// Static top-level pages
-sitemap.write({ url: "/", changefreq: "weekly", priority: 1.0 });
-sitemap.write({ url: "/about", changefreq: "monthly", priority: 0.8 });
-sitemap.write({ url: "/contact", changefreq: "monthly", priority: 0.8 });
-sitemap.write({ url: "/blog", changefreq: "weekly", priority: 0.8 });
+const writeStream = createWriteStream("./public/sitemap.xml");
 
-// Orthopedic Treatments
-sitemap.write({ url: "/service-detail/knee-replacement", changefreq: "monthly", priority: 0.9 });
-sitemap.write({ url: "/service-detail/hip-replacement", changefreq: "monthly", priority: 0.9 });
-sitemap.write({ url: "/service-detail/arthroscopy", changefreq: "monthly", priority: 0.9 });
-sitemap.write({ url: "/service-detail/acl-and-pcl-reconstruction", changefreq: "monthly", priority: 0.9 });
-sitemap.write({ url: "/service-detail/sports-injury", changefreq: "monthly", priority: 0.9 });
-sitemap.write({ url: "/service-detail/arthritis", changefreq: "monthly", priority: 0.9 });
-sitemap.write({ url: "/service-detail/osteoporosis", changefreq: "monthly", priority: 0.9 });
-sitemap.write({ url: "/service-detail/minimal-invasive-complex-trauma-surgery", changefreq: "monthly", priority: 0.9 });
+sitemap.pipe(writeStream);
 
-// Patient Resources
-sitemap.write({ url: "/testimonial", changefreq: "monthly", priority: 0.8 });
-sitemap.write({ url: "/patientinfo", changefreq: "monthly", priority: 0.8 });
+// Manually list your paths
+[
+  "/",
+  "/about",
+  "/contact",
+  "/blog",
+  "/knee-replacement",
+  "/hip-replacement",
+  "/arthroscopy",
+  "/acl-and-pcl-reconstruction",
+  "/sports-injury",
+  "/arthritis",
+  "/osteoporosis",
+  "/minimal-invasive-complex-trauma-surgery",
+  "/testimonial",
+  "/patientinfo",
+].forEach((url) => sitemap.write({ url, changefreq: "monthly", priority: 0.9 }));
 
 sitemap.end();
 
-// Save the sitemap file
-streamToPromise(sitemap)
-  .then((data) => writeFile("public/sitemap.xml", data.toString()))
-  .then(() => {
-    console.log("✅ Sitemap generated for Dr. Amit Sharma's website!");
-  })
-  .catch(console.error);

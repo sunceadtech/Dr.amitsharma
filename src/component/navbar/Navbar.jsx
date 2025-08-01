@@ -11,27 +11,31 @@ const navItems = [
     name: "Orthopedic Treatments",
     children: [
       {
+        name: "Orthopedic Services",
+        path: "/service",
+      },
+      {
         name: "Knee Replacement Surgeon",
-        path: "/service-detail/knee-replacement",
+        path: "/knee-replacement",
       },
       {
         name: "Hip Replacement Surgeon",
-        path: "/service-detail/hip-replacement",
+        path: "/hip-replacement",
       },
-      { name: "Arthroscopy Procedure", path: "/service-detail/arthroscopy" },
+      { name: "Arthroscopy Procedure", path: "/arthroscopy" },
       {
-        name: "ACL & PCL Reconstruction",
-        path: "/service-detail/acl-and-pcl-reconstruction",
+        name: "ACL Reconstruction",
+        path: "/acl-reconstruction",
       },
       {
         name: "Sports Injury Management",
-        path: "/service-detail/sports-injury",
+        path: "/sports-injury",
       },
-      { name: "Arthritis Treatment", path: "/service-detail/arthritis" },
-      { name: "Osteoporosis Management", path: "/service-detail/osteoporosis" },
+      { name: "Arthritis Treatment", path: "/arthritis" },
+      { name: "Osteoporosis Management", path: "/osteoporosis" },
       {
         name: "Minimally Invasive Trauma Surgery",
-        path: "/service-detail/minimal-invasive-complex-trauma-surgery",
+        path: "/minimal-invasive-complex-trauma-surgery",
       },
     ],
   },

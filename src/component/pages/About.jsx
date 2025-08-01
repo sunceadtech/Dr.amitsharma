@@ -15,17 +15,16 @@ function About() {
         </title>
         <meta
           name="description"
-          content="Meet Dr. Amit Sharma, a leading orthopedic doctor in Ghaziabad and Indirapuram specializing in joint replacement and bone care. Trusted by thousands for expert treatment."
+          content="Meet Dr. Amit Sharma, leading orthopedic surgeon in Ghaziabad & Indirapuram specializing in joint replacement, sports injuries & trauma care."
         />
         <meta
           name="keywords"
-          content="Best Orthopedic Doctor Ghaziabad, Dr Amit Sharma, orthopedic surgeon Indirapuram, joint replacement specialist, DrAmitSharmaOrtho, bone doctor Ghaziabad"
+          content="Orthopedic Surgeon Ghaziabad, Dr Amit Sharma, joint replacement, sports injury, trauma surgery Ghaziabad"
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <link rel="canonical" href="https://dramitsharmaortho.com/about" />
 
-        {/* JSON-LD Structured Data for SEO Enhancement */}
         <script type="application/ld+json">
           {`
       {
@@ -33,26 +32,27 @@ function About() {
         "@type": "Person",
         "name": "Dr. Amit Sharma",
         "jobTitle": "Orthopedic Surgeon",
-        "image": "https://dramitsharmaortho.com/images/dr-amit.webp",
-        "description": "Leading orthopedic and joint replacement surgeon based in Ghaziabad & Indirapuram.",
-        "affiliation": {
-          "@type": "MedicalOrganization",
-          "name": "DrAmitSharmaOrtho Clinic"
-        },
         "url": "https://dramitsharmaortho.com/about",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Indirapuram, Ghaziabad",
-          "addressLocality": "Ghaziabad",
-          "addressRegion": "UP",
-          "postalCode": "201014",
-          "addressCountry": "IN"
-        },
+        "image": "https://dramitsharmaortho.com/images/dr-amit.webp",
+        "description": "Leading orthopedic doctor in Ghaziabad.",
         "sameAs": [
           "https://www.facebook.com/dramitsharmaortho",
           "https://www.instagram.com/dramitsharmaortho",
           "https://www.youtube.com/@dramitsharmaortho"
-        ]
+        ],
+        "affiliation": {
+          "@type": "MedicalOrganization",
+          "name": "DrAmitSharmaOrtho Clinic",
+          "url": "https://dramitsharmaortho.com",
+          "logo": "https://dramitsharmaortho.com/images/logo.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-8750056560",
+            "contactType": "Customer Service",
+            "areaServed": "IN",
+            "availableLanguage": ["English", "Hindi"]
+          }
+        }
       }
     `}
         </script>

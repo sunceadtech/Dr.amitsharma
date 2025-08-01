@@ -8,23 +8,51 @@ function MinimalInvaise() {
     <>
       <Helmet>
         <title>
-          Best Minimally Invasive Complex Trauma Surgery in Ghaziabad | Best
-          Surgeone Doctor
+          Best Minimally Invasive Complex Trauma Surgery in Ghaziabad | Dr. Amit
+          Sharma
         </title>
         <meta
           name="description"
-          content="Best orthopedic surgeon in Ghaziabad for minimally invasive complex trauma surgery. Get expert care with smaller incisions and quicker healing."
+          content="Dr. Amit Sharma is the best orthopedic surgeon in Ghaziabad for minimally invasive complex trauma surgery. Experience faster recovery and expert surgical care with small incisions."
         />
         <meta
           name="keywords"
-          content="Best Minimally Invasive Complex Trauma Surgery in Ghaziabad,Best Minimally Invasive Complex Trauma Surgery in Indrapuram "
+          content="Best Minimally Invasive Complex Trauma Surgery in Ghaziabad, Best Minimally Invasive Complex Trauma Surgery in Indirapuram"
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <link
           rel="canonical"
-          href="https://dramitsharmaortho.com/service-detail/minimal-invasive-complex-trauma-surgery"
+          href="https://dramitsharmaortho.com/minimal-invasive-complex-trauma-surgery"
         />
+        {/* JSON-LD Schema.org Structured Data */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Dr. Amit Sharma Orthopedic Clinic",
+        "url": "https://dramitsharmaortho.com/minimal-invasive-complex-trauma-surgery",
+        "image": "https://dramitsharmaortho.com/images/heroimage.webp",
+        "description": "Dr. Amit Sharma specializes in minimally invasive complex trauma surgeries in Ghaziabad. Trusted orthopedic care for faster healing and better outcomes.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Indirapuram, Ghaziabad",
+          "addressLocality": "Ghaziabad",
+          "addressRegion": "UP",
+          "postalCode": "201014",
+          "addressCountry": "IN"
+        },
+        "openingHours": "Mo-Sa 10:00-19:00",
+        "telephone": "+91-8750056560",
+        "medicalSpecialty": "Orthopedic",
+        "founder": {
+          "@type": "Person",
+          "name": "Dr. Amit Sharma"
+        }
+      }
+    `}
+        </script>
       </Helmet>
 
       {/* Banner Section */}
@@ -178,35 +206,35 @@ function MinimalInvaise() {
                 {[
                   { path: "/service", label: "View All Orthopedic Services" },
                   {
-                    path: "/service-detail/knee-replacement",
+                    path: "/knee-replacement",
                     label: "Total Knee Replacement",
                   },
                   {
-                    path: "/service-detail/hip-replacement",
+                    path: "/hip-replacement",
                     label: "Hip Replacement Surgery",
                   },
                   {
-                    path: "/service-detail/arthroscopy",
+                    path: "/arthroscopy",
                     label: "Diagnostic & Surgical Arthroscopy",
                   },
                   {
-                    path: "/service-detail/acl-and-pcl-reconstruction",
-                    label: "ACL & PCL Ligament Reconstruction",
+                    path: "/acl-reconstruction",
+                    label: "ACL Ligament Reconstruction",
                   },
                   {
-                    path: "/service-detail/sports-injury",
+                    path: "/sports-injury",
                     label: "Sports Injury Treatment",
                   },
                   {
-                    path: "/service-detail/arthritis",
+                    path: "/arthritis",
                     label: "Arthritis Management",
                   },
                   {
-                    path: "/service-detail/osteoporosis",
+                    path: "/osteoporosis",
                     label: "Osteoporosis Treatment",
                   },
                   {
-                    path: "/service-detail/minimal-invasive-complex-trauma-surgery",
+                    path: "/minimal-invasive-complex-trauma-surgery",
                     label: "Minimally Invasive Trauma Surgery",
                   },
                 ].map((item, i) => (

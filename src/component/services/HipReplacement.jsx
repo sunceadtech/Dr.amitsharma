@@ -10,18 +10,57 @@ function HipReplacement() {
         <title>Best Hip Replacement Surgeon in Ghaziabad | Dramitsharma</title>
         <meta
           name="description"
-          content="Dr. Amit Sharma offers the best hip replacement surgeon in Ghaziabad using advanced implants & minimally invasive techniques for faster, pain‑free recovery."
+          content="Dr. Amit Sharma offers the best hip replacement in Ghaziabad using advanced implants & minimally invasive techniques for faster, pain‑free recovery."
         />
         <meta
           name="keywords"
-          content="Best Hip Replacement Surgeon in Ghaziabad ,Best Hip Replacement Surgeon in Indrapuram"
+          content="Best Hip Replacement Surgeon in Ghaziabad, Best Hip Replacement Surgeon in Indrapuram"
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <link
           rel="canonical"
-          href="https://dramitsharmaortho.com/service-detail/hip-replacement"
+          href="https://dramitsharmaortho.com/hip-replacement"
         />
+        {/* JSON-LD: Clinic Info */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Dr. Amit Sharma Orthopedic Clinic",
+        "url": "https://dramitsharmaortho.com/hip-replacement",
+        "image": "https://dramitsharmaortho.com/images/dr-amit.webp",
+        "description": "Dr. Amit Sharma offers the best hip replacement in Ghaziabad using advanced implants & minimally invasive techniques for faster, pain‑free recovery.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Indirapuram, Ghaziabad",
+          "addressLocality": "Ghaziabad",
+          "addressRegion": "UP",
+          "postalCode": "201014",
+          "addressCountry": "IN"
+        },
+        "openingHours": "Mo-Sa 09:00-19:00",
+        "medicalSpecialty": "Orthopedic",
+        "telephone": "+91-8750056560"
+      }
+    `}
+        </script>
+
+        {/* JSON-LD: Procedure Info */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "Hip Replacement Surgery",
+        "url": "https://dramitsharmaortho.com/hip-replacement",
+        "procedureType": "Surgical",
+        "bodyLocation": "Hip",
+        "description": "Hip replacement surgery is a procedure in which a worn-out or damaged hip joint is replaced with an artificial implant. Dr. Amit Sharma performs minimally invasive hip replacements for quick recovery and long-term relief."
+      }
+    `}
+        </script>
       </Helmet>
 
       {/* Hero Section */}
@@ -193,7 +232,7 @@ function HipReplacement() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/knee-replacement"
+                    to="/knee-replacement"
                     className="hover:underline inline-block w-full"
                   >
                     Knee Replacement Surgery
@@ -201,7 +240,7 @@ function HipReplacement() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/hip-replacement"
+                    to="/hip-replacement"
                     className="hover:underline inline-block w-full"
                   >
                     Hip Joint Replacement
@@ -209,7 +248,7 @@ function HipReplacement() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/arthroscopy"
+                    to="/arthroscopy"
                     className="hover:underline inline-block w-full"
                   >
                     Joint Arthroscopy Procedures
@@ -217,15 +256,15 @@ function HipReplacement() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/acl-and-pcl-reconstruction"
+                    to="/acl-reconstruction"
                     className="hover:underline inline-block w-full"
                   >
-                    ACL / PCL Ligament Reconstruction
+                    ACL Ligament Reconstruction
                   </Link>
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/sports-injury"
+                    to="/sports-injury"
                     className="hover:underline inline-block w-full"
                   >
                     Sports Injury Management
@@ -233,7 +272,7 @@ function HipReplacement() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/arthritis"
+                    to="/arthritis"
                     className="hover:underline inline-block w-full"
                   >
                     Arthritis Care
@@ -241,7 +280,7 @@ function HipReplacement() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/osteoporosis"
+                    to="/osteoporosis"
                     className="hover:underline inline-block w-full"
                   >
                     Osteoporosis Treatment
@@ -249,7 +288,7 @@ function HipReplacement() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/minimal-invasive-complex-trauma-surgery"
+                    to="/minimal-invasive-complex-trauma-surgery"
                     className="hover:underline inline-block w-full"
                   >
                     Minimally Invasive Trauma Surgery

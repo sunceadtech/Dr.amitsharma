@@ -10,7 +10,7 @@ const blogs = [
     alt: "Patient holding knee in pain - knee pain awareness blog",
     excerpt:
       "Knee pain shouldn't be ignored. Learn about common causes, early symptoms, and when it’s time to see an orthopedic specialist.",
-    link: "/service-detail/knee-replacement",
+    link: "/knee-replacement",
   },
   {
     title: "Top 5 Recovery Tips After Orthopedic Surgery",
@@ -19,7 +19,7 @@ const blogs = [
     alt: "Post-surgery patient doing physiotherapy exercise",
     excerpt:
       "Recover faster and safer with these expert tips—covering physiotherapy, nutrition, rest, and follow-up care after joint surgery.",
-    link: "/service",
+    link: "/orthopedic-recovery", // ✅ Update this to your actual route
   },
   {
     title: "Preventing Sports Injuries: A Guide for Active Adults",
@@ -28,7 +28,7 @@ const blogs = [
     alt: "Athletic adult stretching to prevent sports injury",
     excerpt:
       "Stay in the game longer! Discover how to protect your joints, strengthen muscles, and avoid common sports injuries at any age.",
-    link: "/service-detail/sports-injury",
+    link: "/sports-injury",
   },
 ];
 
@@ -38,22 +38,23 @@ function HomeBlogs() {
       {/* Stats Section */}
       <section className="bg-blue-600 text-white py-12 px-4 hidden md:block">
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
-          <StatItem value="4K+" label="Successful Joint Replacements" />
-          <StatItem value="80K+" label="Satisfied Operated Patients" />
+          <StatItem value="8K+" label="Successful Joint Replacements" />
+          <StatItem value="50K+" label="Satisfied Operated Patients" />
           <StatItem value="24+" label="Years of Experience" />
         </div>
       </section>
+
       {/* Blog Section */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
-          <p className="text-3xl font-semibold text-gray-800 mb-10">
+          <h2 className="text-3xl font-semibold text-gray-800 mb-10">
             Latest Orthopedic Blogs
-          </p>
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {blogs.map((blog, index) => (
               <article
                 key={index}
-                className="bg-white rounded-lg shadow-sm overflow-hidden transition-transform hover:scale-[1.01]"
+                className="bg-white rounded-lg shadow hover:shadow-md transition-transform hover:scale-[1.01] overflow-hidden"
               >
                 <div className="relative w-full h-52">
                   <img
@@ -65,12 +66,15 @@ function HomeBlogs() {
                     loading="lazy"
                     decoding="async"
                   />
-                  <time className="absolute bottom-0 right-0 bg-purple-700 text-white px-3 py-1 text-xs md:text-sm">
+                  <time
+                    className="absolute bottom-0 right-0 bg-purple-700 text-white px-3 py-1 text-xs md:text-sm"
+                    dateTime={new Date(blog.date).toISOString()}
+                  >
                     {blog.date}
                   </time>
                 </div>
                 <div className="p-4">
-                  <p className="text-lg font-semibold text-purple-800 mb-2">
+                  <h3 className="text-lg font-semibold text-purple-800 mb-2">
                     <Link
                       to={blog.link}
                       aria-label={`Read full article: ${blog.title}`}
@@ -78,14 +82,14 @@ function HomeBlogs() {
                     >
                       {blog.title}
                     </Link>
-                  </p>
+                  </h3>
                   <p className="text-sm text-gray-600 mb-3">{blog.excerpt}</p>
                   <Link
                     to={blog.link}
-                    aria-label={`Read full blog: ${blog.title}`}
                     className="text-purple-600 hover:underline text-sm font-medium"
+                    aria-label={`Read full blog: ${blog.title}`}
                   >
-                    {`Explore more ${blog.title}`}
+                    Read Full Blog →
                   </Link>
                 </div>
               </article>
@@ -93,6 +97,7 @@ function HomeBlogs() {
           </div>
         </div>
       </section>
+
       <KneeComp />
     </>
   );
@@ -101,7 +106,7 @@ function HomeBlogs() {
 function StatItem({ value, label }) {
   return (
     <div>
-      <div className="text-4xl font-bold mb-1">{value}</div>
+      <p className="text-4xl font-bold mb-1">{value}</p>
       <p className="text-base leading-tight">{label}</p>
     </div>
   );

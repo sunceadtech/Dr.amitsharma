@@ -6,25 +6,54 @@ import { Link } from "react-router-dom";
 function SportsInjury() {
   return (
     <main>
-      <Helmet>
-        <title>
-          Best Sports Injury Treatment with Modern Therapies In Ghaziabad | Dramitsharmaortho
-        </title>
-        <meta
-          name="description"
-          content="Struggling with a sports injury? Dr. Amit Sharma, Ghaziabad’s leading orthopedic surgeon, treats ACL, PCL, ligament & shoulder injuries with faster recovery"
-        />
-        <meta
-          name="keywords"
-          content="Best Sports Injury Treatment with Modern Therapies In Ghaziabad,best Sports Injury Treatment with Modern Therapies In Indrapuram"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
-        <link
-          rel="canonical"
-          href="https://dramitsharmaortho.com/service-detail/sports-injury"
-        />
-      </Helmet>
+     <Helmet>
+  <title>
+    Best Sports Injury Treatment with Modern Therapies in Ghaziabad | Dr. Amit Sharma Ortho
+  </title>
+  <meta
+    name="description"
+    content="Struggling with a sports injury? Dr. Amit Sharma, Ghaziabad’s leading orthopedic surgeon, treats ACL, PCL, ligament & shoulder injuries with faster recovery."
+  />
+  <meta
+    name="keywords"
+    content="Best Sports Injury Treatment in Ghaziabad, ACL PCL ligament injury doctor Ghaziabad, Sports Injury Treatment Indirapuram"
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  <link
+    rel="canonical"
+    href="https://dramitsharmaortho.com/sports-injury"
+  />
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Dr. Amit Sharma Orthopedic Clinic",
+        "url": "https://dramitsharmaortho.com/sports-injury",
+        "image": "https://dramitsharmaortho.com/images/heroimage.webp",
+        "description": "Expert sports injury treatment in Ghaziabad by Dr. Amit Sharma. Specializing in ACL, PCL, ligament and shoulder injuries for faster recovery and performance.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Indirapuram, Ghaziabad",
+          "addressLocality": "Ghaziabad",
+          "addressRegion": "UP",
+          "postalCode": "201014",
+          "addressCountry": "IN"
+        },
+        "openingHours": "Mo-Sa 10:00-19:00",
+        "telephone": "+91-8750056560",
+        "medicalSpecialty": "Orthopedic",
+        "founder": {
+          "@type": "Person",
+          "name": "Dr. Amit Sharma"
+        }
+      }
+    `}
+  </script>
+</Helmet>
+
 
       {/* Hero Section */}
       <header
@@ -112,7 +141,7 @@ function SportsInjury() {
                 {
                   heading: "Common Types of Sports Injuries",
                   items: [
-                    "ACL and PCL ligament tears",
+                    "ACL ligament tears",
                     "Meniscus tears",
                     "Shoulder dislocations and rotator cuff injuries",
                     "Ankle sprains and fractures",
@@ -219,29 +248,29 @@ function SportsInjury() {
                   { name: "All Services", path: "/service" },
                   {
                     name: "Knee Replacement",
-                    path: "/service-detail/knee-replacement",
+                    path: "/knee-replacement",
                   },
                   {
                     name: "Hip Replacement",
-                    path: "/service-detail/hip-replacement",
+                    path: "/hip-replacement",
                   },
-                  { name: "Arthroscopy", path: "/service-detail/arthroscopy" },
+                  { name: "Arthroscopy", path: "/arthroscopy" },
                   {
-                    name: "ACL and PCL Reconstruction",
-                    path: "/service-detail/acl-and-pcl-reconstruction",
+                    name: "ACL Reconstruction",
+                    path: "/acl-reconstruction",
                   },
                   {
                     name: "Sports Injury",
-                    path: "/service-detail/sports-injury",
+                    path: "/sports-injury",
                   },
-                  { name: "Arthritis", path: "/service-detail/arthritis" },
+                  { name: "Arthritis", path: "/arthritis" },
                   {
                     name: "Osteoporosis",
-                    path: "/service-detail/osteoporosis",
+                    path: "/osteoporosis",
                   },
                   {
                     name: "Minimally Invasive Trauma Surgery",
-                    path: "/service-detail/minimal-invasive-complex-trauma-surgery",
+                    path: "/minimal-invasive-complex-trauma-surgery",
                   },
                 ].map(({ name, path }, i) => (
                   <li className="py-3" key={i}>

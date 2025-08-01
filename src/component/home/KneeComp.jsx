@@ -31,7 +31,7 @@ function KneeComp() {
             and see if surgery might be the right option for you.
           </p>
           <Link
-            to="/service-detail/knee-replacement"
+            to="/knee-replacement"
             className="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-md shadow hover:bg-yellow-300 transition-colors duration-300"
             aria-label="Check your knee health and learn more about treatment options"
           >

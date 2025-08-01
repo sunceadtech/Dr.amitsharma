@@ -10,6 +10,7 @@ function TestimonialCards() {
       description:
         "After struggling with intense hip pain for over a year, I chose Dr. Amit Sharma for my hip replacement. The surgery was a success — now I walk pain-free and feel younger again. Truly the best orthopedic surgeon in Ghaziabad!",
       video: "https://www.youtube.com/watch?v=FOIu2Dt1Wvw",
+      alt: "Rahul Verma after successful hip replacement surgery by Dr. Amit Sharma in Ghaziabad",
     },
     {
       name: "Sita Devi",
@@ -18,6 +19,7 @@ function TestimonialCards() {
       description:
         "Years of knee stiffness had taken away my energy. Dr. Amit Sharma performed my knee replacement with such expertise that I feel active and mobile again. He’s a miracle worker for joint care in Ghaziabad.",
       video: "https://www.youtube.com/shorts/SsTBvblBpzA",
+      alt: "Sita Devi walking comfortably after total knee replacement by Dr. Amit Sharma",
     },
     {
       name: "Anjali Verma",
@@ -25,6 +27,7 @@ function TestimonialCards() {
       title: "Spinal Disc Issue Treatment",
       description:
         "I suffered from a bulging disc and couldn’t sit for long hours. Dr. Amit’s spinal care plan brought me full relief. I’m back at work without back pain — highly recommended for anyone with spine issues.",
+      alt: "Anjali Verma smiling after spinal disc treatment.",
     },
     {
       name: "Priya Thakur",
@@ -32,6 +35,7 @@ function TestimonialCards() {
       title: "ACL Reconstruction Surgery",
       description:
         "After tearing my ACL during a tournament, I was worried about sports forever. Dr. Amit’s surgical skills brought me back to the badminton court within months. His team is world-class for sports injuries!",
+      alt: "Priya Thakur back on badminton court after ACL reconstruction by Dr. Amit Sharma",
     },
     {
       name: "Mr. Ramcena",
@@ -39,6 +43,7 @@ function TestimonialCards() {
       title: "International Orthopedic Patient Care",
       description:
         "I traveled from Nigeria for orthopedic treatment in India. Dr. Amit Sharma and his hospital staff offered outstanding care and guidance. The surgery and recovery were smooth and successful.",
+      alt: "Mr. Ramcena from Nigeria post orthopedic surgery at Dr. Amit Sharma's clinic",
     },
     {
       name: "Rekha Sharma",
@@ -46,6 +51,7 @@ function TestimonialCards() {
       title: "Shoulder Fracture Surgery",
       description:
         "A severe shoulder fracture made daily tasks painful. Dr. Amit’s precise orthopedic surgery restored my mobility. Within weeks, I could lift my arm fully again. Thank you for giving me my life back.",
+      alt: "Rekha Sharma raising arm after shoulder fracture surgery by Dr. Amit Sharma",
     },
     {
       name: "Priya Tiwari",
@@ -53,6 +59,7 @@ function TestimonialCards() {
       title: "Elbow Joint Surgery",
       description:
         "I had lost movement in my elbow due to bone stiffness. Thanks to Dr. Amit Sharma, I regained full range of motion after surgery. His approach is modern and highly effective.",
+      alt: "Priya Tiwari smiling after successful elbow joint surgery in Ghaziabad",
     },
     {
       name: "Manju Kumari",
@@ -60,6 +67,7 @@ function TestimonialCards() {
       title: "Complex Fracture Recovery",
       description:
         "After a major accident, I had multiple fractures and limited hope. But Dr. Amit’s expert care and surgical precision helped me recover completely. I now walk and move confidently again.",
+      alt: "Manju Kumari walking again after multiple fracture recovery under Dr. Amit Sharma",
     },
   ];
 
@@ -76,22 +84,24 @@ function TestimonialCards() {
             role="group"
             aria-labelledby={`testimonial-${index}-name`}
           >
-            {/* Patient Image and Optional Video */}
+            {/* Image & Video */}
             <div className="relative w-[160px] h-[160px] flex-shrink-0">
               <img
                 src={t.image}
-                alt={`Photo of ${t.name}`}
-                className="w-full h-full object-cover rounded"
+                alt={t.alt}
+                title={`${t.name} - ${t.title}`}
                 loading="lazy"
+                decoding="async"
                 width="160"
                 height="160"
+                className="w-full h-full object-cover rounded"
               />
               {t.video && (
                 <a
                   href={t.video}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`Watch ${t.name}'s video about their ${t.title.toLowerCase()}`}
+                  aria-label={`Watch ${t.name}'s video testimonial about ${t.title.toLowerCase()}`}
                   className="absolute inset-0 flex items-center justify-center bg-black/50 text-white text-4xl hover:text-purple-400 rounded focus:outline-none focus:ring-2 focus:ring-purple-500"
                 >
                   <FaPlayCircle aria-hidden="true" />
@@ -102,7 +112,7 @@ function TestimonialCards() {
               )}
             </div>
 
-            {/* Text Details */}
+            {/* Text */}
             <div>
               <h3
                 id={`testimonial-${index}-name`}

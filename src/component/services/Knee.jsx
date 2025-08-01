@@ -6,21 +6,51 @@ function Knee() {
   return (
     <>
       <Helmet>
-        <title>Best Knee Replacement Surgeon In Ghaziabad | Dramitshramaortho</title>
+        <title>
+          Best Knee Replacement Surgeon In Ghaziabad | Dramitshramaortho
+        </title>
         <meta
           name="description"
-          content="Doctor Amitsharma is one Of The Best Knee Replacement Surgeone In Ghaziabad. He has performaed many knee replacement surgery for paitent and help them In knee pain relief."
+          content="Dr. Amit Sharma is one of the best knee replacement surgeons in Ghaziabad. He has performed numerous successful surgeries, helping patients find lasting relief from chronic knee pain."
         />
         <meta
           name="keywords"
-          content="Best Knee Replacement Surgeon In Ghaziabad, Best Knee Replacement Surgeon In Indrapuram,"
+          content="Best Knee Replacement Surgeon In Ghaziabad, Best Knee Replacement Surgeon In Indrapuram"
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <link
           rel="canonical"
-          href="https://dramitsharmaortho.com/service-detail/knee-replacement"
+          href="https://dramitsharmaortho.com/knee-replacement"
         />
+        {/* JSON-LD Schema.org Structured Data */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Dr. Amit Sharma Orthopedic Clinic",
+        "url": "https://dramitsharmaortho.com/knee-replacement",
+        "image": "https://dramitsharmaortho.com/images/logo.png",
+        "description": "Dr. Amit Sharma is one of the best knee replacement surgeons in Ghaziabad. Trusted for advanced knee care and successful surgeries.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Indirapuram, Ghaziabad",
+          "addressLocality": "Ghaziabad",
+          "addressRegion": "UP",
+          "postalCode": "201014",
+          "addressCountry": "IN"
+        },
+        "openingHours": "Mo-Sa 10:00-19:00",
+        "telephone": "+91-8750056560",
+        "medicalSpecialty": "Orthopedic",
+        "founder": {
+          "@type": "Person",
+          "name": "Dr. Amit Sharma"
+        }
+      }
+    `}
+        </script>
       </Helmet>
 
       <div className="relative w-full h-[500px] md:h-[500px] overflow-hidden">
@@ -204,7 +234,7 @@ function Knee() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/knee-replacement"
+                    to="/knee-replacement"
                     className="hover:underline inline-block w-full"
                     aria-label="Knee Replacement Service"
                   >
@@ -213,7 +243,7 @@ function Knee() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/hip-replacement"
+                    to="/hip-replacement"
                     className="hover:underline inline-block w-full"
                     aria-label="Hip Replacement Service"
                   >
@@ -222,7 +252,7 @@ function Knee() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/arthroscopy"
+                    to="/arthroscopy"
                     className="hover:underline inline-block w-full"
                     aria-label="Arthroscopy Service"
                   >
@@ -231,16 +261,16 @@ function Knee() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/acl-and-pcl-reconstruction"
+                    to="/acl-reconstruction"
                     className="hover:underline inline-block w-full"
                     aria-label="ACL and PCL Reconstruction Service"
                   >
-                    ACL and PCL Reconstruction
+                    ACL Reconstruction
                   </Link>
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/sports-injury"
+                    to="/sports-injury"
                     className="hover:underline inline-block w-full"
                     aria-label="Sports Injury Service"
                   >
@@ -249,7 +279,7 @@ function Knee() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/arthritis"
+                    to="/arthritis"
                     className="hover:underline inline-block w-full"
                     aria-label="Arthritis Treatment Service"
                   >
@@ -258,7 +288,7 @@ function Knee() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/osteoporosis"
+                    to="/osteoporosis"
                     className="hover:underline inline-block w-full"
                     aria-label="Osteoporosis Service"
                   >
@@ -267,7 +297,7 @@ function Knee() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/minimal-invasive-complex-trauma-surgery"
+                    to="/minimal-invasive-complex-trauma-surgery"
                     className="hover:underline inline-block w-full"
                     aria-label="Minimally Invasive Complex Trauma Surgery"
                   >

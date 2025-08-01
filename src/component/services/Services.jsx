@@ -1,103 +1,85 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { ChevronRight } from "lucide-react";
+
+const services = [
+  {
+    title: "Knee Replacement",
+    image: "/images/knee.webp",
+    alt: "Knee replacement surgery service",
+    link: "/knee-replacement",
+    description:
+      "Advanced knee joint replacement for arthritis and injury-related pain relief.",
+  },
+  {
+    title: "Hip Replacement",
+    image: "/images/hip.webp",
+    alt: "Hip replacement orthopedic service",
+    link: "/hip-replacement",
+    description:
+      "Restore mobility and eliminate chronic hip pain with expert hip surgery.",
+  },
+  {
+    title: "ACL Surgery",
+    image: "/images/aclpcl.webp",
+    alt: "ACL ligament surgery Ghaziabad",
+    link: "/acl-surgery",
+    description:
+      "Minimally invasive ACL reconstruction to treat torn ligaments effectively.",
+  },
+  {
+    title: "Arthroscopy",
+    image: "/images/arthroscopy.webp",
+    alt: "Arthroscopy procedure treatment",
+    link: "/arthroscopy",
+    description:
+      "Quick recovery joint surgery for sports injuries and ligament issues.",
+  },
+  {
+    title: "Fracture Treatment",
+    image: "/images/minimal.webp",
+    alt: "Fracture treatment by Dr. Amit Sharma",
+    link: "/fracture-treatment",
+    description:
+      "Precise fracture management and bone healing using modern techniques.",
+  },
+  {
+    title: "Sports Injury",
+    image: "/images/sportsinjury.webp",
+    alt: "Sports injury specialist orthopedic",
+    link: "/sports-injury",
+    description:
+      "Specialized treatment for ligament tears, dislocations, and athlete recovery.",
+  },
+];
 
 function Services() {
-  const blogs = [
-    {
-      title: "Knee Replacement",
-      image: "/images/kneepain.webp",
-      alt: "Knee replacement surgery care for chronic knee pain and arthritis",
-      excerpt:
-        "Knee pain shouldn't be ignored. Learn about common causes, early symptoms, and when it’s time to see an orthopedic specialist.",
-      link: "/service-detail/knee-replacement",
-    },
-    {
-      title: "Arthroscopy",
-      image: "/images/astro.webp", // NOTE: file name 'astro.webp' -> check if typo for 'arthro.webp'
-      alt: "Arthroscopy procedure showing minimally invasive joint surgery",
-      excerpt:
-        "Stay in the game longer! Discover how to protect your joints, strengthen muscles, and avoid common sports injuries at any age.",
-      link: "/service-detail/arthroscopy",
-    },
-    {
-      title: "ACL & PCL Reconstruction",
-      image: "/images/aclpcl.webp",
-      alt: "ACL and PCL reconstruction to restore knee stability after injury",
-      excerpt:
-        "Understand how ACL and PCL reconstruction helps restore stability and mobility after sports or traumatic injuries.",
-      link: "/service-detail/acl-and-pcl-reconstruction",
-    },
-    {
-      title: "Hip Replacement",
-      image: "/images/hip.webp",
-      alt: "Hip replacement implant for pain-free mobility and faster recovery",
-      excerpt:
-        "Recover faster and safer with expert tips covering physiotherapy, nutrition, rest, and follow-up care after joint surgery.",
-      link: "/service-detail/hip-replacement",
-    },
-    {
-      title: "Minimally Invasive Trauma Surgery",
-      image: "/images/minimal.webp",
-      alt: "Minimally invasive orthopedic trauma surgery for quicker healing",
-      excerpt:
-        "Advanced surgical techniques for orthopedic trauma that reduce recovery time and improve patient outcomes.",
-      link: "/service-detail/minimal-invasive-complex-trauma-surgery",
-    },
-    {
-      title: "Sports Injury",
-      image: "/images/sportsinjury.webp",
-      alt: "Sports injury treatment for ligament tears, sprains and strains",
-      excerpt:
-        "Explore how to prevent, treat, and recover from common sports injuries with personalized orthopedic care.",
-      link: "/service-detail/sports-injury",
-    },
-    {
-      title: "Arthritis Treatment",
-      image: "/images/arthritist.webp",
-      alt: "Arthritis treatment to reduce joint pain and improve mobility",
-      excerpt:
-        "Manage chronic arthritis effectively with modern treatment options and expert guidance for joint care.",
-      link: "/service-detail/arthritis",
-    },
-    {
-      title: "Osteoporosis Management",
-      image: "/images/osteo.webp",
-      alt: "Osteoporosis management to strengthen bones and prevent fractures",
-      excerpt:
-        "Learn how early detection and proper treatment can help manage osteoporosis and prevent fractures.",
-      link: "/service-detail/osteoporosis",
-    },
-  ];
-
   return (
-    <main>
-      <Helmet>
-        <title>
-          Best Orthopedic Services in Ghaziabad | Best Orthopedic Surgeone
-        </title>
-        <meta
-          name="description"
-          content="Dr. Amit Sharma offers advanced orthopedic services in Ghaziabad including joint pain care, sports injury treatment,Arthroscopy,Arthritist, fracture management and minimally invasive surgeries."
-        />
-        <meta
-          name="keywords"
-          content="Best Orthopedic Services in Ghaziabad ,Best Orthopedic Services in Indrapuram"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
-        <link rel="canonical" href="https://dramitsharmaortho.com/service" />
-        <script type="application/ld+json">
-          {`
+    <>
+      <main>
+        <Helmet>
+          <title>Best Orthopedic Services in Ghaziabad | Dr. Amit Sharma</title>
+          <meta
+            name="description"
+            content="Explore specialized orthopedic services by Dr. Amit Sharma in Ghaziabad including knee replacement, hip surgery, ACL repair, arthritis care, and sports injury treatment."
+          />
+          <meta
+            name="keywords"
+            content="Best Orthopedic Services in Ghaziabad,Best Orthopedic Service In Indrapuram."
+          />
+          <meta name="robots" content="index, follow" />
+          <meta name="googlebot" content="index, follow" />
+          <link rel="canonical" href="https://dramitsharmaortho.com/service" />
+          {/* Structured Data (JSON-LD) */}
+          <script type="application/ld+json">
+            {`
       {
         "@context": "https://schema.org",
         "@type": "MedicalClinic",
-        "name": "DrAmitSharmaOrtho Clinic",
-        "url": "https://dramitsharmaortho.com/service",
-        "logo": "https://dramitsharmaortho.com/images/dr-amit.webp",
-        "image": "https://dramitsharmaortho.com/images/dr-amit.webp",
-        "description": "Dr. Amit Sharma offers specialized orthopedic services in Ghaziabad including sports injury treatment, arthritis care, joint pain solutions, and minimally invasive surgeries.",
+        "name": "Dr. Amit Sharma Orthopedic Clinic",
+        "image": "https://dramitsharmaortho.com/images/heroimage.webp",
+        "description": "Explore advanced orthopedic treatments in Ghaziabad including knee, hip, ACL, and sports injury care by Dr. Amit Sharma.",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Indirapuram, Ghaziabad",
@@ -106,14 +88,15 @@ function Services() {
           "postalCode": "201014",
           "addressCountry": "IN"
         },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+91-8750056560",
-          "contactType": "orthopedic Services",
-          "areaServed": "IN",
-          "availableLanguage": ["English", "Hindi"]
-        },
+        "openingHours": "Mo-Sa 10:00-19:00",
+        "telephone": "+91-8750056560",
+        "url": "https://dramitsharmaortho.com/service",
         "medicalSpecialty": "Orthopedic",
+        "founder": {
+          "@type": "Person",
+          "name": "Dr. Amit Sharma",
+          "jobTitle": "Orthopedic Surgeon"
+        },
         "sameAs": [
           "https://www.facebook.com/dramitsharmaortho",
           "https://www.instagram.com/dramitsharmaortho",
@@ -121,114 +104,165 @@ function Services() {
         ]
       }
     `}
-        </script>
-      </Helmet>
+          </script>
+        </Helmet>
 
-      {/* Hero Section */}
-      <header
-        className="relative w-full h-[500px] overflow-hidden"
-        role="banner"
-      >
-        <img
-          src="/images/service.webp"
-          alt="Expert Orthopedic Services Banner"
-          className="absolute inset-0 w-full h-full object-cover"
-          width={1920}
-          height={500}
-          loading="eager"
-        />
-        <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
-        <div className="relative z-10 h-full flex items-center justify-start">
-          <div className="max-w-4xl px-6 md:px-32 text-center md:text-left">
-            <h1 className="text-white text-4xl md:text-5xl font-bold mb-4 leading-tight">
-              Best Orthopedic Services in indrapuram
+        {/* Top Banner */}
+        <section
+          className="relative w-full h-[250px] md:h-[400px] overflow-hidden"
+          aria-label="Orthopedic Services"
+        >
+          <img
+            src="/images/main.webp"
+            alt="Orthopedic services banner"
+            width="1920"
+            height="500"
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
+              Our Orthopedic Services
             </h1>
-            <nav
-              className="flex flex-wrap items-center justify-center md:justify-start gap-2 text-white text-sm"
-              aria-label="Breadcrumb"
-            >
-              <Link to="/" className="hover:underline font-semibold">
-                Home
-              </Link>
-              <ChevronRight className="w-4 h-4" aria-hidden="true" />
-              <span className="font-semibold" aria-current="page">
-                Our Expertise
-              </span>
-            </nav>
           </div>
-        </div>
-      </header>
+        </section>
 
-      {/* Services Section */}
-      <section
-        className="py-16 bg-gray-50"
-        aria-labelledby="services-heading"
-        role="region"
-      >
-        <div className="max-w-7xl mx-auto px-4">
-          <h2
-            id="services-heading"
-            className="text-3xl sm:text-4xl font-extrabold text-center text-gray-800 mb-4 leading-snug uppercase"
-          >
-            Your Journey to Pain-Free Movement Starts Here
+        {/* Intro Text for SEO */}
+        <section className="px-4 py-8 md:py-12 max-w-5xl mx-auto text-center">
+          <p className="text-lg text-gray-700">
+            At <strong>Dr. Amit Sharma Orthopedic Clinic</strong>, we offer
+            advanced orthopedic treatments including{" "}
+            <strong>knee replacement, hip surgery, arthroscopy</strong>, and
+            specialized <strong>ACL and fracture care</strong>. We are committed
+            to providing the best bone and joint care in{" "}
+            <strong>Ghaziabad</strong>.
+          </p>
+        </section>
+
+        {/* Services Grid */}
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 pb-12 max-w-6xl mx-auto">
+          {services.map((service) => (
+            <Link
+              to={service.link}
+              key={service.title}
+              className="group border rounded-lg overflow-hidden shadow hover:shadow-xl transition duration-300 bg-white"
+            >
+              <img
+                src={service.image}
+                alt={service.alt}
+                loading="lazy"
+                width="400"
+                height="300"
+                className="w-full h-60 object-cover"
+              />
+              <div className="p-4">
+                <div className="flex justify-between items-center">
+                  <h2 className="text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition">
+                    {service.title}
+                  </h2>
+                  <ChevronRight className="text-blue-500" />
+                </div>
+                <p className="text-sm text-gray-600 mt-1">
+                  {service.description}
+                </p>
+              </div>
+            </Link>
+          ))}
+        </section>
+        <section className="px-4 pb-12 max-w-5xl mx-auto text-gray-700 text-base leading-relaxed">
+          <h2 className="text-xl font-semibold text-center mb-6 text-gray-800">
+            Expert Treatment for Bone, Joint & Muscle Conditions
           </h2>
-          <p className="text-slate-600 text-base sm:text-lg mb-10 max-w-3xl mx-auto text-center leading-relaxed">
-            Experience world-class orthopedic care tailored to your condition.
-            We combine precise diagnosis, expert treatment, and compassionate
-            recovery support.
+
+          <p className="mb-4">
+            Dr. Amit Sharma offers specialized care for a wide range of
+            orthopedic conditions using the latest medical techniques and
+            patient-first approach. From joint preservation to advanced surgical
+            solutions, every treatment is designed to restore mobility, reduce
+            pain, and improve your quality of life.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {blogs.map((blog, index) => (
-              <article
-                key={index}
-                className="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-xl group"
-                itemScope
-                itemType="https://schema.org/MedicalWebPage"
-                role="article"
-                aria-labelledby={`service-title-${index}`}
+          <h3 className="text-lg font-semibold mt-6 mb-2 text-gray-800">
+            🔍 Arthroscopy – Minimally Invasive Joint Surgery
+          </h3>
+          <p className="mb-4">
+            Arthroscopy is a modern, less invasive procedure used to diagnose
+            and treat joint problems, especially in the knee, shoulder, elbow,
+            and ankle. Using a small camera and instruments, we treat torn
+            ligaments, cartilage damage, and other joint issues with faster
+            recovery and minimal pain. It's ideal for sports injuries and
+            early-stage joint degeneration.
+          </p>
+
+          <h3 className="text-lg font-semibold mt-6 mb-2 text-gray-800">
+            🦴 Arthritis Management – Regain Joint Comfort
+          </h3>
+          <p className="mb-4">
+            Arthritis causes joint inflammation and stiffness that affects daily
+            movement. We treat both <strong>osteoarthritis</strong> (wear and
+            tear of cartilage) and <strong>rheumatoid arthritis</strong>{" "}
+            (autoimmune condition) with a combination of medications,
+            physiotherapy, lifestyle changes, and joint replacement surgery when
+            needed.
+          </p>
+
+          <h3 className="text-lg font-semibold mt-6 mb-2 text-gray-800">
+            💪 Osteoporosis Treatment – Strengthen Your Bones
+          </h3>
+          <p className="mb-4">
+            Osteoporosis leads to brittle and weak bones, increasing the risk of
+            fractures. At our clinic, we assess your bone density and provide
+            personalized treatment plans including calcium & vitamin D
+            supplements, bone-strengthening medications, and exercises to
+            improve balance and bone health, especially in elderly patients.
+          </p>
+
+          <h3 className="text-lg font-semibold mt-6 mb-2 text-gray-800">
+            ⚽ Sports Injury Care – Get Back in Action
+          </h3>
+          <p className="mb-4">
+            Whether you're an athlete or a fitness enthusiast, sports injuries
+            like ligament tears, muscle strains, and dislocations can disrupt
+            your routine. We offer expert diagnosis, minimally invasive
+            treatments like arthroscopy, and tailored rehabilitation plans to
+            help you recover quickly and return to your sport stronger.
+          </p>
+
+          <h3 className="text-lg font-semibold mt-6 mb-2 text-gray-800">
+            🔧 Personalized Recovery Plans
+          </h3>
+          <p>
+            Every patient is different. That’s why Dr. Amit Sharma creates
+            customized treatment plans based on your age, lifestyle, activity
+            level, and medical history. From conservative therapy to surgical
+            intervention, we aim for long-term healing and pain-free living.
+          </p>
+        </section>
+
+        {/* Internal Link Boosting */}
+        <section className="text-center px-4 pb-16">
+          <div className="max-w-xl mx-auto bg-gray-50 p-4 rounded-lg shadow-sm">
+            <p className="text-base text-gray-700 leading-relaxed">
+              Looking for a trusted orthopedic surgeon? Visit our{" "}
+              <Link
+                to="/"
+                className="text-blue-600 font-medium underline hover:text-blue-800 transition"
               >
-                <figure className="relative">
-                  <img
-                    src={blog.image}
-                    alt={`${blog.alt}`}
-                    className="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105"
-                    width={400}
-                    height={208}
-                    loading="lazy"
-                    itemProp="image"
-                  />
-                </figure>
-                <div className="p-5">
-                  <p
-                    id={`service-title-${index}`}
-                    className="text-xl font-bold text-purple-800 mb-2"
-                    itemProp="name"
-                  >
-                    <Link to={blog.link} className="hover:underline">
-                      {blog.title}
-                    </Link>
-                  </p>
-                  <p
-                    className="text-sm text-gray-700 mb-3"
-                    itemProp="description"
-                  >
-                    {blog.excerpt}
-                  </p>
-                  <Link
-                    to={blog.link}
-                    className="text-purple-700 hover:underline font-medium text-sm"
-                    aria-label={`Learn more about ${blog.title} service`}
-                  >
-                    Read more about {blog.title}
-                  </Link>
-                </div>
-              </article>
-            ))}
+                homepage
+              </Link>{" "}
+              or learn more{" "}
+              <Link
+                to="/about"
+                className="text-blue-600 font-medium underline hover:text-blue-800 transition"
+              >
+                about Dr. Amit Sharma
+              </Link>
+              .
+            </p>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </>
   );
 }
 

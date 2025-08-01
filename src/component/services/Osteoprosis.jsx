@@ -6,25 +6,54 @@ import { Helmet } from "react-helmet";
 function Osteoporosis() {
   return (
     <>
-      <Helmet>
-        <title>
-          Best Osteoporosis Treatment In Ghazaibad | Dramitshrmaortho
-        </title>
-        <meta
-          name="description"
-          content="Best osteoporosis care in Ghaziabad for weak bones and fracture prevention. Dr. Amit Sharma offers advanced diagnosis, treatment and lifestyle guidance."
-        />
-        <meta
-          name="keywords"
-          content="Best Osteoporosis Treatment & Bone Health Care in Ghaziabad,Best Osteoporosis Treatment & Bone Health Care in Indrpuram"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
-        <link
-          rel="canonical"
-          href="https://dramitsharmaortho.com/service-detail/osteoporosis"
-        />
-      </Helmet>
+   <Helmet>
+  <title>
+    Best Osteoporosis Treatment in Ghaziabad | Dr. Amit Sharma Ortho
+  </title>
+  <meta
+    name="description"
+    content="Get the best osteoporosis treatment in Ghaziabad from Dr. Amit Sharma. Specialized care for weak bones, fracture prevention, and long-term bone health."
+  />
+  <meta
+    name="keywords"
+    content="Best Osteoporosis Treatment in Ghaziabad, Bone Health Specialist in Indirapuram, Osteoporosis Treatment Doctor Ghaziabad"
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  <link
+    rel="canonical"
+    href="https://dramitsharmaortho.com/osteoporosis"
+  />
+  {/* JSON-LD Structured Data */}
+  <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Dr. Amit Sharma Orthopedic Clinic",
+        "url": "https://dramitsharmaortho.com/osteoporosis",
+        "image": "https://dramitsharmaortho.com/images/heroimage.webp",
+        "description": "Top-rated osteoporosis treatment in Ghaziabad by Dr. Amit Sharma. Strengthen bones, prevent fractures, and improve mobility with expert care.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Indirapuram, Ghaziabad",
+          "addressLocality": "Ghaziabad",
+          "addressRegion": "UP",
+          "postalCode": "201014",
+          "addressCountry": "IN"
+        },
+        "openingHours": "Mo-Sa 10:00-19:00",
+        "telephone": "+91-91-8750056560",
+        "medicalSpecialty": "Orthopedic",
+        "founder": {
+          "@type": "Person",
+          "name": "Dr. Amit Sharma"
+        }
+      }
+    `}
+  </script>
+</Helmet>
+
 
       {/* Hero Section */}
       <div className="relative w-full h-[500px] overflow-hidden">
@@ -183,7 +212,7 @@ function Osteoporosis() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/knee-replacement"
+                    to="/knee-replacement"
                     className="hover:underline inline-block w-full"
                   >
                     Learn About Knee Replacement
@@ -191,7 +220,7 @@ function Osteoporosis() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/hip-replacement"
+                    to="/hip-replacement"
                     className="hover:underline inline-block w-full"
                   >
                     Explore Hip Replacement Options
@@ -199,7 +228,7 @@ function Osteoporosis() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/arthroscopy"
+                    to="/arthroscopy"
                     className="hover:underline inline-block w-full"
                   >
                     Arthroscopy Procedures Explained
@@ -207,15 +236,15 @@ function Osteoporosis() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/acl-and-pcl-reconstruction"
+                    to="/acl-reconstruction"
                     className="hover:underline inline-block w-full"
                   >
-                    ACL & PCL Reconstruction Services
+                    ACL Reconstruction Services
                   </Link>
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/sports-injury"
+                    to="/sports-injury"
                     className="hover:underline inline-block w-full"
                   >
                     Treating Sports Injuries
@@ -223,7 +252,7 @@ function Osteoporosis() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/arthritis"
+                    to="/arthritis"
                     className="hover:underline inline-block w-full"
                   >
                     Arthritis Management Techniques
@@ -231,7 +260,7 @@ function Osteoporosis() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/osteoporosis"
+                    to="/osteoporosis"
                     className="hover:underline inline-block w-full"
                   >
                     Osteoporosis Treatments
@@ -239,7 +268,7 @@ function Osteoporosis() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/minimal-invasive-complex-trauma-surgery"
+                    to="/minimal-invasive-complex-trauma-surgery"
                     className="hover:underline inline-block w-full"
                   >
                     Minimally Invasive Trauma Surgery Info

@@ -116,8 +116,8 @@ function Home() {
                         </Link>
                       </div>
                       <dl className="grid grid-cols-3 gap-4 text-center">
-                        <Stat number="4K+" label="Joint Replacements" />
-                        <Stat number="84K+" label="Operated Patients" />
+                        <Stat number="8K+" label="Joint Replacements" />
+                        <Stat number="50K+" label="Operated Patients" />
                         <Stat number="24+" label="Years of Experience" />
                       </dl>
                     </div>

@@ -7,7 +7,9 @@ function Arthritis() {
   return (
     <>
       <Helmet>
-        <title>Best Arthritis Care & Treatment in Ghaziabad | dramitshramaortho</title>
+        <title>
+          Best Arthritis Care & Treatment in Ghaziabad | dramitshramaortho
+        </title>
         <meta
           name="description"
           content="Best advanced arthritis treatment in Ghaziabad with Dr. Amit Sharma. Specializing in knee, hip & joint care for lasting pain relief and improved mobility"
@@ -18,12 +20,44 @@ function Arthritis() {
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
-        <link
-          rel="canonical"
-          href="https://dramitsharmaortho.com/service-detail/arthritis"
-        />
-      </Helmet>
+        <link rel="canonical" href="https://dramitsharmaortho.com/arthritis" />
 
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Dr. Amit Sharma Orthopedic Clinic",
+        "url": "https://dramitsharmaortho.com/arthritis",
+        "image": "https://dramitsharmaortho.com/images/dr-amit.webp",
+        "description": "Best advanced arthritis treatment in Ghaziabad with Dr. Amit Sharma. Specializing in knee, hip & joint care for lasting pain relief and improved mobility.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Indirapuram, Ghaziabad",
+          "addressLocality": "Ghaziabad",
+          "addressRegion": "UP",
+          "postalCode": "201014",
+          "addressCountry": "IN"
+        },
+        "openingHours": "Mo-Sa 10:00-18:00",
+        "telephone": "+91-8750056560",
+        "medicalSpecialty": "Orthopedic",
+        "founder": {
+          "@type": "Physician",
+          "name": "Dr. Amit Sharma",
+          "jobTitle": "Orthopedic Surgeon",
+          "url": "https://dramitsharmaortho.com"
+        },
+        "sameAs": [
+          "https://www.facebook.com/dramitsharmaortho",
+          "https://www.instagram.com/dramitsharmaortho",
+          "https://www.youtube.com/@dramitsharmaortho"
+        ]
+      }
+    `}
+        </script>
+      </Helmet>
       <div className="relative w-full h-[500px] md:h-[500px] overflow-hidden">
         <img
           src="/images/service.webp"
@@ -208,7 +242,7 @@ function Arthritis() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/knee-replacement"
+                    to="/knee-replacement"
                     className="hover:underline inline-block w-full"
                   >
                     Knee Replacement Surgery Details
@@ -216,7 +250,7 @@ function Arthritis() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/hip-replacement"
+                    to="/hip-replacement"
                     className="hover:underline inline-block w-full"
                   >
                     Hip Replacement Overview
@@ -224,7 +258,7 @@ function Arthritis() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/arthroscopy"
+                    to="/arthroscopy"
                     className="hover:underline inline-block w-full"
                   >
                     Arthroscopy Procedure Info
@@ -232,15 +266,15 @@ function Arthritis() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/acl-and-pcl-reconstruction"
+                    to="/acl-reconstruction"
                     className="hover:underline inline-block w-full"
                   >
-                    ACL & PCL Reconstruction Guide
+                    ACL Reconstruction Guide
                   </Link>
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/sports-injury"
+                    to="/sports-injury"
                     className="hover:underline inline-block w-full"
                   >
                     Sports Injury Treatment
@@ -248,7 +282,7 @@ function Arthritis() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/arthritis"
+                    to="/arthritis"
                     className="hover:underline inline-block w-full"
                   >
                     Arthritis Care Options
@@ -256,7 +290,7 @@ function Arthritis() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/osteoporosis"
+                    to="/osteoporosis"
                     className="hover:underline inline-block w-full"
                   >
                     Osteoporosis Management
@@ -264,7 +298,7 @@ function Arthritis() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/minimal-invasive-complex-trauma-surgery"
+                    to="/minimal-invasive-complex-trauma-surgery"
                     className="hover:underline inline-block w-full"
                   >
                     Minimally Invasive Trauma Surgery

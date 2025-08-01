@@ -11,7 +11,7 @@ function Blog() {
       alt: "Person holding knee in pain", // ✅ Alt tag
       excerpt:
         "Knee pain shouldn't be ignored. Learn about common causes, early symptoms, and when it’s time to see an orthopedic specialist.",
-      link: "/service-detail/knee-replacement",
+      link: "/knee-replacement",
     },
     {
       title: "Top 5 Recovery Tips After Orthopedic Surgery",
@@ -20,7 +20,7 @@ function Blog() {
       alt: "Post-surgery recovery with physiotherapy", // ✅ Alt tag
       excerpt:
         "Recover faster and safer with these expert tips—covering physiotherapy, nutrition, rest, and follow-up care after joint surgery.",
-      link: "/service-detail/minimal-invasive-complex-trauma-surgery",
+      link: "/minimal-invasive-complex-trauma-surgery",
     },
     {
       title: "Preventing Sports Injuries: A Guide for Active Adults",
@@ -29,7 +29,7 @@ function Blog() {
       alt: "Athlete stretching before workout", // ✅ Alt tag
       excerpt:
         "Stay in the game longer! Discover how to protect your joints, strengthen muscles, and avoid common sports injuries at any age.",
-      link: "/service-detail/sports-injury",
+      link: "/sports-injury",
     },
     {
       title: "Are Health Screenings Really That Important?",
@@ -56,7 +56,7 @@ function Blog() {
       alt: "Happy patient walking after joint recovery", // ✅ Alt tag
       excerpt:
         "Follow the inspiring recovery of a patient who overcame chronic joint pain through expert orthopedic care and rehabilitation.",
-      link: "/service-detail/arthritis",
+      link: "/arthritis",
     },
   ];
 

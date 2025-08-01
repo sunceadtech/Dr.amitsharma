@@ -7,29 +7,52 @@ function AclandPcl() {
     <>
       <Helmet>
         <title>
-          Best ACL and PCL Reconstruction Surgeon In Ghaziabad | Dr Amit Shrama
+          Best ACL Reconstruction Surgeon In Ghaziabad | Dr Amit Sharma
         </title>
         <meta
           name="description"
-          content="Best ACL & PCL ligament surgeon in Ghaziabad for sports and knee injuries. Dr. Amit Sharma ensures precise treatment with faster return to active life."
+          content="Best ACL ligament surgeon in Ghaziabad for sports and knee injuries. Dr. Amit Sharma ensures precise treatment with faster return to active life."
         />
         <meta
           name="keywords"
-          content="Best ACL and PCL Reconstruction Surgeon In Ghaziabad ,Best ACL and PCL Reconstruction Surgeon In Indrapuram"
+          content="Best ACL Reconstruction Surgeon In Ghaziabad, Best ACL  Reconstruction Surgeon In Indirapuram"
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <link
           rel="canonical"
-          href="https://dramitsharmaortho.com/service-detail/acl-and-pcl-reconstruction"
+          href="https://dramitsharmaortho.com/acl-and-pcl-reconstruction"
         />
+        {/* ✅ JSON-LD structured data for MedicalProcedure */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalProcedure",
+        "name": "ACL  Reconstruction",
+        "alternateName": "ACL PCL Ligament Surgery",
+        "description": "Best ACL & PCL ligament reconstruction in Ghaziabad by Dr. Amit Sharma for athletes and patients with knee ligament injuries.",
+        "howPerformed": "Minimally invasive arthroscopic surgery to reconstruct torn ACL  ligaments.",
+        "bodyLocation": "Knee",
+        "procedureType": "Surgical",
+        "url": "https://dramitsharmaortho.com/acl-and-pcl-reconstruction",
+        "provider": {
+          "@type": "Physician",
+          "name": "Dr. Amit Sharma",
+          "medicalSpecialty": "Orthopedic Surgery",
+          "url": "https://dramitsharmaortho.com"
+        }
+      }
+    `}
+        </script>
       </Helmet>
+
       {/* Banner Section */}
       <div className="relative w-full h-[500px] overflow-hidden">
         <img
           src="/images/service.webp"
-          alt="ACL and PCL reconstruction – operating room banner"
-          title="ACL and PCL reconstruction – operating room"
+          alt="ACL reconstruction – operating room banner"
+          title="ACL reconstruction – operating room"
           className="absolute inset-0 w-full h-full object-cover"
           width="1920"
           height="500"
@@ -42,7 +65,7 @@ function AclandPcl() {
         <div className="relative z-10 h-full flex items-center justify-start">
           <div className="text-left md:text-center max-w-full md:max-w-4xl px-4 md:px-32">
             <h1 className="text-white text-3xl md:text-4xl uppercase font-bold mb-4 leading-snug">
-              Best ACL and PCL Reconstruction Surgeon In Ghaziabad{" "}
+              Best ACL Reconstruction Surgeon In Ghaziabad{" "}
             </h1>
             <div className="flex flex-wrap items-center gap-2 text-sm text-white uppercase">
               <Link
@@ -62,7 +85,7 @@ function AclandPcl() {
               </Link>
               <ChevronRight className="w-4 h-4" />
               <span className="text-white/80 font-bold">
-                ACL and PCL Reconstruction
+                ACL Reconstruction
               </span>
             </div>
           </div>
@@ -77,8 +100,8 @@ function AclandPcl() {
             <div className="rounded overflow-hidden shadow-md mb-6">
               <img
                 src="/images/aclpcl.webp"
-                alt="ACL and PCL reconstruction illustration"
-                title="ACL and PCL reconstruction"
+                alt="ACL reconstruction illustration"
+                title="ACL reconstruction"
                 className="w-full object-cover"
                 width="1200"
                 height="600"
@@ -89,7 +112,7 @@ function AclandPcl() {
             </div>
 
             <div className="space-y-6 text-gray-700 text-[15px]">
-              <h2 className="text-3xl font-bold">ACL and PCL Reconstruction</h2>
+              <h2 className="text-3xl font-bold">ACL  Reconstruction</h2>
               <p>
                 Anterior Cruciate Ligament (ACL) and Posterior Cruciate Ligament
                 (PCL) reconstructions are critical orthopedic surgeries
@@ -176,29 +199,29 @@ function AclandPcl() {
                 {[
                   { path: "/service", label: "All Services" },
                   {
-                    path: "/service-detail/knee-replacement",
+                    path: "/knee-replacement",
                     label: "Knee Replacement",
                   },
                   {
-                    path: "/service-detail/hip-replacement",
+                    path: "/hip-replacement",
                     label: "Hip Replacement",
                   },
-                  { path: "/service-detail/arthroscopy", label: "Arthroscopy" },
+                  { path: "/arthroscopy", label: "Arthroscopy" },
                   {
-                    path: "/service-detail/acl-and-pcl-reconstruction",
-                    label: "ACL and PCL Reconstruction",
+                    path: "/acl-reconstruction",
+                    label: "ACL Reconstruction",
                   },
                   {
-                    path: "/service-detail/sports-injury",
+                    path: "/sports-injury",
                     label: "Sports Injury",
                   },
-                  { path: "/service-detail/arthritis", label: "Arthritis" },
+                  { path: "/arthritis", label: "Arthritis" },
                   {
-                    path: "/service-detail/osteoporosis",
+                    path: "/osteoporosis",
                     label: "Osteoporosis",
                   },
                   {
-                    path: "/service-detail/minimal-invasive-complex-trauma-surgery",
+                    path: "/minimal-invasive-complex-trauma-surgery",
                     label: "Minimally Invasive Trauma Surgery",
                   },
                 ].map((item, i) => (

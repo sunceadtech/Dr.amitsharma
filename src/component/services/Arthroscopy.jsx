@@ -8,7 +8,7 @@ function Arthroscopy() {
     <>
       <Helmet>
         <title>
-          Best Arthroscopy Surgeon In Indrapuram |Best Orthopedic Doctor
+          Best Arthroscopy Surgeon In Indrapuram | Best Orthopedic Doctor
         </title>
         <meta
           name="description"
@@ -16,15 +16,55 @@ function Arthroscopy() {
         />
         <meta
           name="keywords"
-          content="Best Arthroscopy Surgeon In Ghaziabad,Best Arthroscopy Surgeon In Indrapuram"
+          content="Best Arthroscopy Surgeon In Ghaziabad, Best Arthroscopy Surgeon In Indrapuram"
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <link
           rel="canonical"
-          href="https://dramitsharmaortho.com/service-detail/arthritis"
+          href="https://dramitsharmaortho.com/arthroscopy"
         />
+
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {`
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "Dr. Amit Sharma Orthopedic Clinic",
+      "url": "https://dramitsharmaortho.com/arthroscopy",
+      "image": "https://dramitsharmaortho.com/images/dr-amit.webp",
+      "description": "Best arthroscopy surgeon in Ghaziabad for advanced joint, shoulder and knee treatments. Book an appointment with Dr. Amit Sharma today.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Indirapuram, Ghaziabad",
+        "addressLocality": "Ghaziabad",
+        "addressRegion": "UP",
+        "postalCode": "201014",
+        "addressCountry": "IN"
+      },
+      "openingHours": "Mo-Sa 09:00-19:00",
+      "medicalSpecialty": "Orthopedic",
+      "telephone": "+91-8750056560"
+    }
+  `}
+        </script>
+
+        <script type="application/ld+json">
+          {`
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalProcedure",
+      "name": "Arthroscopy",
+      "url": "https://dramitsharmaortho.com/arthroscopy",
+      "procedureType": "Surgical",
+      "bodyLocation": ["Knee", "Shoulder", "Joint"],
+      "description": "Arthroscopy is a minimally invasive orthopedic surgery used to diagnose and treat joint problems. Dr. Amit Sharma provides advanced arthroscopy care in Ghaziabad for faster recovery and precision treatment."
+    }
+  `}
+        </script>
       </Helmet>
+
       <div className="relative w-full h-[500px] md:h-[500px] overflow-hidden">
         <img
           src="/images/service.webp"
@@ -179,7 +219,7 @@ function Arthroscopy() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/knee-replacement"
+                    to="/knee-replacement"
                     className="hover:underline inline-block w-full"
                   >
                     Knee Replacement Information
@@ -187,7 +227,7 @@ function Arthroscopy() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/hip-replacement"
+                    to="/hip-replacement"
                     className="hover:underline inline-block w-full"
                   >
                     Hip Replacement Overview
@@ -195,7 +235,7 @@ function Arthroscopy() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/arthroscopy"
+                    to="/arthroscopy"
                     className="hover:underline inline-block w-full"
                   >
                     Arthroscopy Details
@@ -203,15 +243,15 @@ function Arthroscopy() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/acl-and-pcl-reconstruction"
+                    to="/acl-reconstruction"
                     className="hover:underline inline-block w-full"
                   >
-                    ACL & PCL Reconstruction
+                    ACL Reconstruction
                   </Link>
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/sports-injury"
+                    to="/sports-injury"
                     className="hover:underline inline-block w-full"
                   >
                     Sports Injury Treatment
@@ -219,7 +259,7 @@ function Arthroscopy() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/arthritis"
+                    to="/arthritis"
                     className="hover:underline inline-block w-full"
                   >
                     Arthritis Care Options
@@ -227,7 +267,7 @@ function Arthroscopy() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/osteoporosis"
+                    to="/osteoporosis"
                     className="hover:underline inline-block w-full"
                   >
                     Osteoporosis Management
@@ -235,7 +275,7 @@ function Arthroscopy() {
                 </li>
                 <li className="py-3">
                   <Link
-                    to="/service-detail/minimal-invasive-complex-trauma-surgery"
+                    to="/minimal-invasive-complex-trauma-surgery"
                     className="hover:underline inline-block w-full"
                   >
                     Minimally Invasive Trauma Surgery

@@ -33,27 +33,27 @@ const Approuter = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/testimonial" element={<Testimonial />} />
           <Route path="/patientinfo" element={<PaitentInfo />} />
-          <Route path="/service-detail/knee-replacement" element={<Knee />} />
+          <Route path="/knee-replacement" element={<Knee />} />
           <Route
-            path="/service-detail/hip-replacement"
+            path="/hip-replacement"
             element={<HipReplacement />}
           />
-          <Route path="/service-detail/arthroscopy" element={<Arthroscopy />} />
+          <Route path="/arthroscopy" element={<Arthroscopy />} />
           <Route
-            path="/service-detail/acl-and-pcl-reconstruction"
+            path="/acl-reconstruction"
             element={<AclandPcl />}
           />
           <Route
-            path="/service-detail/sports-injury"
+            path="/sports-injury"
             element={<SportsInjury />}
           />
-          <Route path="/service-detail/arthritis" element={<Arthritis />} />
+          <Route path="/arthritis" element={<Arthritis />} />
           <Route
-            path="/service-detail/osteoporosis"
+            path="/osteoporosis"
             element={<Osteoprosis />}
           />
           <Route
-            path="/service-detail/minimal-invasive-complex-trauma-surgery"
+            path="/minimal-invasive-complex-trauma-surgery"
             element={<MinimalInvaise />}
           />
           <Route path="/service" element={<Services />} />

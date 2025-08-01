@@ -12,16 +12,15 @@ function HomeMeet() {
         <figure className="w-full">
           <img
             src="/images/drsharma.webp"
-            alt="Dr. Amit Sharma, Top Orthopedic Surgeon in Ghaziabad – Expert in Joint Replacement & Sports Injuries"
-            width="600"
-            height="400"
+            alt="Dr. Amit Sharma - Orthopedic Surgeon in Ghaziabad, expert in joint replacement and sports injuries"
+            width={600}
+            height={400}
             className="rounded-lg shadow-md w-full h-auto object-cover"
-            loading="eager"
+            loading="lazy"
             decoding="async"
-            fetchpriority="high"
           />
           <figcaption className="sr-only">
-            Dr. Amit Sharma – Orthopedic surgery and sports injury specialist
+            Dr. Amit Sharma – Orthopedic Surgeon & Sports Injury Specialist
           </figcaption>
         </figure>
 
@@ -33,15 +32,15 @@ function HomeMeet() {
           >
             Meet{" "}
             <span className="text-purple-700">
-              Best Orthopedic Surgeon In Ghaziabad 
+              Best Orthopedic Surgeon In Ghaziabad
             </span>
           </h3>
           <p className="text-gray-700 mb-4 leading-relaxed text-[15.5px]">
             With over 23 years of surgical experience, Dr. Amit Sharma is a
-            renowned orthopedic specialist in Ghaziabad, known for his expertise in
-            joint replacement, arthroscopy, trauma surgery, and sports injuries.
-            His personal commitment to endurance sports like marathons and
-            triathlons deeply informs his patient-centric care.
+            renowned orthopedic specialist in Ghaziabad, known for his expertise
+            in joint replacement, arthroscopy, trauma surgery, and sports injuries.
+            His personal commitment to endurance sports like marathons and triathlons
+            deeply informs his patient-centric care.
           </p>
 
           <p className="text-gray-700 mb-6 text-[15.5px]">
@@ -53,7 +52,7 @@ function HomeMeet() {
           <Link
             to="/about"
             className="inline-block bg-purple-700 hover:bg-purple-800 text-white font-semibold py-2 px-6 rounded transition duration-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
-            aria-label="Get To Know about Dr. Amit Sharma, orthopedic specialist in Ghaziabad"
+            aria-label="Learn more about Dr. Amit Sharma - orthopedic specialist in Ghaziabad"
           >
             Get To Know About Dr. Sharma
           </Link>
@@ -64,5 +63,6 @@ function HomeMeet() {
 }
 
 export default HomeMeet;
+
 
 
