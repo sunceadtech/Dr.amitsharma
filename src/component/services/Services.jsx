@@ -57,23 +57,21 @@ const services = [
 function Services() {
   return (
     <>
-      <main>
-        <Helmet>
-          <title>Best Orthopedic Services in Ghaziabad | Dr. Amit Sharma</title>
-          <meta
-            name="description"
-            content="Explore specialized orthopedic services by Dr. Amit Sharma in Ghaziabad including knee replacement, hip surgery, ACL repair, arthritis care, and sports injury treatment."
-          />
-          <meta
-            name="keywords"
-            content="Best Orthopedic Services in Ghaziabad,Best Orthopedic Service In Indrapuram."
-          />
-          <meta name="robots" content="index, follow" />
-          <meta name="googlebot" content="index, follow" />
-          <link rel="canonical" href="https://dramitsharmaortho.com/service" />
-          {/* Structured Data (JSON-LD) */}
-          <script type="application/ld+json">
-            {`
+      <Helmet>
+        <title>Best Orthopedic Services in Ghaziabad | Dr. Amit Sharma</title>
+        <meta
+          name="description"
+          content="Explore specialized orthopedic services by Dr. Amit Sharma in Ghaziabad including knee replacement, hip surgery, ACL repair, arthritis care, and sports injury treatment."
+        />
+        <meta
+          name="keywords"
+          content="Best Orthopedic Services in Ghaziabad, Best Orthopedic Service In Indrapuram"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <link rel="canonical" href="https://dramitsharmaortho.com/services" />
+        <script type="application/ld+json">
+          {`
       {
         "@context": "https://schema.org",
         "@type": "MedicalClinic",
@@ -90,7 +88,7 @@ function Services() {
         },
         "openingHours": "Mo-Sa 10:00-19:00",
         "telephone": "+91-8750056560",
-        "url": "https://dramitsharmaortho.com/service",
+        "url": "https://dramitsharmaortho.com/services",
         "medicalSpecialty": "Orthopedic",
         "founder": {
           "@type": "Person",
@@ -104,9 +102,9 @@ function Services() {
         ]
       }
     `}
-          </script>
-        </Helmet>
-
+        </script>
+      </Helmet>
+      <main>
         {/* Top Banner */}
         <section
           className="relative w-full h-[250px] md:h-[400px] overflow-hidden"
@@ -122,7 +120,7 @@ function Services() {
           />
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
             <h1 className="text-white text-3xl md:text-5xl font-bold text-center">
-              Our Orthopedic Services
+              Best Orthopedic Services in Ghaziabad
             </h1>
           </div>
         </section>
@@ -173,7 +171,6 @@ function Services() {
           <h2 className="text-xl font-semibold text-center mb-6 text-gray-800">
             Expert Treatment for Bone, Joint & Muscle Conditions
           </h2>
-
           <p className="mb-4">
             Dr. Amit Sharma offers specialized care for a wide range of
             orthopedic conditions using the latest medical techniques and
@@ -257,7 +254,6 @@ function Services() {
               >
                 about Dr. Amit Sharma
               </Link>
-              .
             </p>
           </div>
         </section>

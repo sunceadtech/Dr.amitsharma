@@ -33,32 +33,21 @@ const Approuter = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/testimonial" element={<Testimonial />} />
           <Route path="/patientinfo" element={<PaitentInfo />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/knee-replacement" element={<Knee />} />
-          <Route
-            path="/hip-replacement"
-            element={<HipReplacement />}
-          />
+          <Route path="/hip-replacement" element={<HipReplacement />} />
           <Route path="/arthroscopy" element={<Arthroscopy />} />
-          <Route
-            path="/acl-reconstruction"
-            element={<AclandPcl />}
-          />
-          <Route
-            path="/sports-injury"
-            element={<SportsInjury />}
-          />
+          <Route path="/acl-reconstruction" element={<AclandPcl />} />
+          <Route path="/sports-injury" element={<SportsInjury />} />
           <Route path="/arthritis" element={<Arthritis />} />
-          <Route
-            path="/osteoporosis"
-            element={<Osteoprosis />}
-          />
+          <Route path="/osteoporosis" element={<Osteoprosis />} />
           <Route
             path="/minimal-invasive-complex-trauma-surgery"
             element={<MinimalInvaise />}
           />
-          <Route path="/service" element={<Services />} />
+
           <Route path="/thankyou" element={<ThankYou />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>

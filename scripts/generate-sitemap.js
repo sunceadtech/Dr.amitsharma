@@ -13,6 +13,7 @@ sitemap.pipe(writeStream);
   "/about",
   "/contact",
   "/blog",
+  "/services",
   "/knee-replacement",
   "/hip-replacement",
   "/arthroscopy",

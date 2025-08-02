@@ -3,21 +3,12 @@ import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 
 export default function NotFound() {
-  useEffect(() => {
-    // Ensure search engines don't index this page
-    const meta = document.createElement("meta");
-    meta.name = "robots";
-    meta.content = "noindex, nofollow";
-    document.head.appendChild(meta);
-    return () => {
-      document.head.removeChild(meta);
-    };
-  }, []);
+  
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-2 text-center">
       <img
-        src="https://www.shutterstock.com/image-vector/male-doctor-smiling-selfconfidence-flat-600nw-2281709217.jpg"
+        src="/images/pagenot.webp"
         alt="Not Found"
         className="w-64 md:w-96 mb-6 object-cover rounded-sm"
         loading="lazy"

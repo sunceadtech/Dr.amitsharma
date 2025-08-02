@@ -89,7 +89,7 @@ function MinimalInvaise() {
                 </li>
                 <li>
                   <Link
-                    to="/service"
+                    to="/services"
                     className="hover:underline font-bold text-white/90"
                   >
                     Our Services
@@ -204,7 +204,7 @@ function MinimalInvaise() {
               </p>
               <ul className="text-sm md:text-md font-bold divide-y divide-purple-500 text-center">
                 {[
-                  { path: "/service", label: "View All Orthopedic Services" },
+                  { path: "/services", label: "View All Orthopedic Services" },
                   {
                     path: "/knee-replacement",
                     label: "Total Knee Replacement",

@@ -23,38 +23,61 @@ function About() {
         />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
+        <meta name="author" content="Dr. Amit Sharma" />
         <link rel="canonical" href="https://dramitsharmaortho.com/about" />
-
         <script type="application/ld+json">
           {`
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Dr. Amit Sharma Orthopedic Clinic",
+    "image": "https://dramitsharmaortho.com/images/logo.png",
+    "description": "Orthopedic clinic in Ghaziabad led by Dr. Amit Sharma.",
+    "url": "https://dramitsharmaortho.com",
+    "telephone": "+91-8750056560",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Indirapuram",
+      "addressLocality": "Ghaziabad",
+      "addressRegion": "UP",
+      "postalCode": "201014",
+      "addressCountry": "IN"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "150"
+    },
+    "review": [
       {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Dr. Amit Sharma",
-        "jobTitle": "Orthopedic Surgeon",
-        "url": "https://dramitsharmaortho.com/about",
-        "image": "https://dramitsharmaortho.com/images/dr-amit.webp",
-        "description": "Leading orthopedic doctor in Ghaziabad.",
-        "sameAs": [
-          "https://www.facebook.com/dramitsharmaortho",
-          "https://www.instagram.com/dramitsharmaortho",
-          "https://www.youtube.com/@dramitsharmaortho"
-        ],
-        "affiliation": {
-          "@type": "MedicalOrganization",
-          "name": "DrAmitSharmaOrtho Clinic",
-          "url": "https://dramitsharmaortho.com",
-          "logo": "https://dramitsharmaortho.com/images/logo.png",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+91-8750056560",
-            "contactType": "Customer Service",
-            "areaServed": "IN",
-            "availableLanguage": ["English", "Hindi"]
-          }
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Priya Sharma"
+        },
+        "reviewBody": "Priya Sharma shared a positive recovery experience.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        }
+      },
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Rahul Kumar"
+        },
+        "reviewBody": "Excellent orthopedic care, fully recovered after surgery.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
         }
       }
-    `}
+    ]
+  }
+  `}
         </script>
       </Helmet>
 
@@ -161,58 +184,116 @@ function About() {
 
           {/* Fellowship and Clinics */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-            {/* Fellowships */}
-            <div className="border-2 border-purple-400 p-5 rounded-md">
-              <h3 className="font-semibold mb-3 text-purple-600 text-lg">
-                International Fellowships & Certifications
+            {/* Qualifications */}
+            <div className="border border-gray-300 shadow-sm p-5 rounded-xl flex flex-col h-full bg-white">
+              <h3 className="font-semibold mb-4 text-purple-700 text-lg">
+                Dr. Amit Sharma’s Qualifications
               </h3>
-              <ul className="space-y-2 list-image-[url('/images/arrow1.png')] pl-5 text-sm">
+              <ul className="space-y-2 list-disc pl-5 text-sm text-gray-800">
+                <li>MBBS – University Of Agra, 1996</li>
                 <li>
-                  Arthroscopy & Sports Medicine – <strong>Sydney</strong>
+                  MS – Orthopaedics – Baba Raghavdas Medical College, Gorakhpur,
+                  2000
                 </li>
                 <li>
-                  Advanced Trauma Surgery – <strong>Seoul</strong>
+                  Kleos Fellowship in Knee Replacement, Arthroscopy & Sports
+                  Injuries – North Sydney Orthopedics & Sports Medicine Centre –
+                  Sydney
                 </li>
                 <li>
-                  Exercise Medicine – <strong>South Wales, UK</strong>
-                </li>
-              </ul>
-            </div>
-
-            {/* Yashoda Hospital */}
-            <div className="border-2 border-blue-500 p-5 rounded-md">
-              <h3 className="font-semibold mb-3 text-blue-600 text-lg">
-                Super Speciality Hospital In Ghaziabad
-              </h3>
-              <ul className="space-y-2 list-image-[url('/images/arrow1.png')] pl-5 text-sm">
-                <li>Consultation Days: Monday to Saturday</li>
-                <li>Morning: 09:00 AM – 02:00 PM</li>
-                <li>Evening: 05:00 PM – 07:00 PM</li>
-                <li>
-                  <strong>Call: </strong>
-                  <p className="inline">+91 87500 56560</p>
-                </li>
-              </ul>
-            </div>
-
-            {/* City Clinic */}
-            <div className="border-2 border-purple-400 p-5 rounded-md">
-              <h3 className="font-semibold mb-3 text-purple-600 text-lg">
-                City Clinic – Indirapuram, Ghaziabad,UP.
-              </h3>
-              <ul className="space-y-2 list-image-[url('/images/arrow1.png')] pl-5 text-sm">
-                <li>Consultation: Monday to Saturday</li>
-                <li>Timings: 07:00 PM – 09:00 PM</li>
-                <li>Opp. Swarn Cinema, near Surya Hospital, Ghaziabad</li>
-                <li>
-                  <strong>Call: </strong>
-                  <p className="inline">+91 88266 29486</p>
+                  Synthes Fellowship in Minimally Invasive Trauma Surgery – Guro
+                  Hospital & Research Institute – Seoul
                 </li>
                 <li>
-                  <strong>Email: </strong>
-                  <p className="inline text-blue-600 underline">
+                  <strong>Call:</strong>{" "}
+                  <a
+                    href="tel:+918826629486"
+                    className="text-blue-600 underline"
+                  >
+                    +91 88266 29486
+                  </a>
+                </li>
+                <li>
+                  <strong>Email:</strong>{" "}
+                  <a
+                    href="mailto:amit9851@yahoo.com"
+                    className="text-blue-600 underline"
+                  >
                     amit9851@yahoo.com
-                  </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Fellowships */}
+            <div className="border border-gray-300 shadow-sm p-5 rounded-xl flex flex-col h-full bg-white">
+              <h3 className="font-semibold mb-4 text-purple-700 text-lg">
+                Dr. Amit Sharma’s Memberships
+              </h3>
+              <ul className="space-y-2 list-disc pl-5 text-sm text-gray-800">
+                <li>
+                  <strong>KLEOS Fellowship</strong> in Replacement Surgery,
+                  Arthroscopy & Sports Injuries – North Sydney Orthopedics &
+                  Sports Medicine Centre, Sydney
+                </li>
+                <li>
+                  <strong>Fellowship</strong> in Minimally Invasive Trauma
+                  Surgery – Korea University Medical Centre (KUMC), Seoul
+                </li>
+                <li>
+                  Dr. Amit Sharma, MBBS, MS, is a well-known orthopedic surgeon
+                  in Ghaziabad,
+                </li>
+                <li>
+                  <strong>Call:</strong>{" "}
+                  <a
+                    href="tel:+918826629486"
+                    className="text-blue-600 underline"
+                  >
+                    +91 88266 29486
+                  </a>
+                </li>
+                <li>
+                  <strong>Email:</strong>{" "}
+                  <a
+                    href="mailto:amit9851@yahoo.com"
+                    className="text-blue-600 underline"
+                  >
+                    amit9851@yahoo.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Speciality */}
+            <div className="border border-gray-300 shadow-sm p-5 rounded-xl flex flex-col h-full bg-white">
+              <h3 className="font-semibold mb-4 text-blue-700 text-lg">
+                Dr. Amit Sharma’s Specialities
+              </h3>
+              <ul className="space-y-2 list-disc pl-5 text-sm text-gray-800">
+                <li>Arthroscopy & Sports Injuries</li>
+                <li>Primary & Revision Knee & Hip Replacements</li>
+                <li>Minimally Invasive Trauma Surgery</li>
+                <li>Complex Orthopedic Trauma</li>
+                <li>Hip Replacement Surgeory</li>
+                <li>Sports Injury Management</li>
+                <li>
+                  <strong>Call:</strong>{" "}
+                  <a
+                    href="tel:+918750056560"
+                    className="text-blue-600 underline"
+                  >
+                    +91 87500 56560
+                  </a>
+                </li>
+                <li>
+                  <strong>Email:</strong>{" "}
+                  <a
+                    href="mailto:amit9851@yahoo.com"
+                    className="text-blue-600 underline"
+                  >
+                    amit9851@yahoo.com
+                  </a>
                 </li>
               </ul>
             </div>
@@ -221,7 +302,7 @@ function About() {
           {/* CTA */}
           <div className="text-center pt-8">
             <Link
-              to="/service"
+              to="/services"
               className="bg-purple-700 text-white px-6 py-3 rounded-md hover:bg-purple-800 transition"
               aria-label="View all orthopedic treatments by Dr. Amit Sharma"
             >

@@ -77,7 +77,7 @@ function AclandPcl() {
               </Link>
               <ChevronRight className="w-4 h-4" />
               <Link
-                to="/service"
+                to="/services"
                 className="hover:underline font-bold text-white/90"
                 aria-label="View all services"
               >
@@ -197,7 +197,7 @@ function AclandPcl() {
               </h3>
               <ul className="text-sm font-bold divide-y divide-purple-500 text-center">
                 {[
-                  { path: "/service", label: "All Services" },
+                  { path: "/services", label: "All services" },
                   {
                     path: "/knee-replacement",
                     label: "Knee Replacement",

@@ -12,7 +12,7 @@ const navItems = [
     children: [
       {
         name: "Orthopedic Services",
-        path: "/service",
+        path: "/services",
       },
       {
         name: "Knee Replacement Surgeon",

@@ -8,7 +8,7 @@ const info = [
     alt: "Total knee replacement surgery illustration",
     description:
       "Learn how total knee replacement can relieve chronic pain and improve mobility through modern orthopedic techniques.",
-    link: "https://en.wikipedia.org/wiki/Knee_replacement",
+    // link: "https://en.wikipedia.org/wiki/Knee_replacement",
   },
   {
     title: "Hip Replacement",
@@ -16,7 +16,7 @@ const info = [
     alt: "Hip joint replacement surgical procedure image",
     description:
       "Understand hip replacement surgery, its recovery process, and how it restores freedom of movement.",
-    link: "https://en.wikipedia.org/wiki/Hip_replacement",
+    // link: "https://en.wikipedia.org/wiki/Hip_replacement",
   },
   {
     title: "ACL Reconstruction",
@@ -24,7 +24,7 @@ const info = [
     alt: "ACL reconstruction for sports knee injury recovery",
     description:
       "Find out how ACL reconstruction helps athletes and active individuals return to full function after injury.",
-    link: "https://en.wikipedia.org/wiki/Anterior_cruciate_ligament_reconstruction",
+    // link: "https://en.wikipedia.org/wiki/Anterior_cruciate_ligament_reconstruction",
   },
   {
     title: "Shoulder Arthroscopy",
@@ -32,7 +32,7 @@ const info = [
     alt: "Shoulder arthroscopy showing minimally invasive treatment",
     description:
       "Explore how minimally invasive shoulder arthroscopy treats rotator cuff tears and joint pain effectively.",
-    link: "https://en.wikipedia.org/wiki/Shoulder_problem",
+    // link: "https://en.wikipedia.org/wiki/Shoulder_problem",
   },
 ];
 
@@ -152,7 +152,7 @@ const PaitentInfo = () => {
                   <p className="text-gray-700 text-base leading-relaxed">
                     {item.description}
                   </p>
-                  {item.link && (
+                  {/* {item.link && (
                     <a
                       href={item.link}
                       target="_blank"
@@ -162,7 +162,7 @@ const PaitentInfo = () => {
                       <FaFilePdf className="w-4 h-4" />
                       Read more about {item.title}
                     </a>
-                  )}
+                  )} */}
                 </div>
               </article>
             ))}

@@ -119,7 +119,7 @@ export default function Footer() {
                 ["knee-replacement", "Knee Replacement"],
                 ["hip-replacement", "Hip Replacement"],
                 ["arthroscopy", "Arthroscopy"],
-                ["acl-reconstruction", "ACL/PCL Reconstruction"],
+                ["acl-reconstruction", "ACL Reconstruction"],
                 ["sports-injury", "Sports Injury"],
                 ["arthritis", "Arthritis Care"],
                 ["osteoporosis", "Osteoporosis"],

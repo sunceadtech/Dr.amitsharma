@@ -245,7 +245,7 @@ function SportsInjury() {
               </h3>
               <ul className="text-sm font-bold divide-y divide-purple-500 text-center">
                 {[
-                  { name: "All Services", path: "/service" },
+                  { name: "All Services", path: "/services" },
                   {
                     name: "Knee Replacement",
                     path: "/knee-replacement",

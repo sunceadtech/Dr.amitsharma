@@ -224,7 +224,7 @@ function HipReplacement() {
               <ul className="text-sm md:text-base font-bold divide-y divide-purple-500 text-center">
                 <li className="py-3">
                   <Link
-                    to="/service"
+                    to="/services"
                     className="hover:underline inline-block w-full"
                   >
                     View All Orthopedic Services

@@ -200,7 +200,7 @@ function Arthritis() {
                 </li>
                 <li>
                   <strong>Emotional Support:</strong> Counseling, support
-                  groups, and mental health services help cope with chronic
+                  groups, and mental health servicess help cope with chronic
                   conditions.
                 </li>
               </ul>
@@ -224,20 +224,20 @@ function Arthritis() {
           {/* Sidebar */}
           <aside
             className="lg:w-1/4 w-full mt-10 lg:mt-0 space-y-6 mb-6"
-            aria-label="Sidebar with services and OPD timings"
+            aria-label="Sidebar with servicess and OPD timings"
           >
-            {/* Services Box */}
+            {/* servicess Box */}
             <div className="bg-purple-700 text-white p-4 min-h-[400px] md:min-h-[550px] rounded shadow-sm">
               <h3 className="text-lg font-semibold text-slate-100 mb-4 md:text-3xl text-center">
-                Our Services
+                Our services
               </h3>
               <ul className="text-sm md:text-md font-bold divide-y divide-purple-500 text-center">
                 <li className="py-3">
                   <Link
-                    to="/service"
+                    to="/services"
                     className="hover:underline inline-block w-full"
                   >
-                    Explore All Services
+                    Explore All servicess
                   </Link>
                 </li>
                 <li className="py-3">

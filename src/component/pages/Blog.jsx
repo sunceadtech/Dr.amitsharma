@@ -64,8 +64,7 @@ function Blog() {
     <>
       <Helmet>
         <title>
-          Best Orthopedic Surgeon Blogs In Ghaziabad | Best Orthopedic Surgeon
-          Blogs In Indrapuram
+          Best Bone Doctor In Ghaziabad | Best Haddi Doctor Ghaziabad
         </title>
         <meta
           name="description"
@@ -80,7 +79,7 @@ function Blog() {
         <meta name="googlebot" content="index, follow" />
         <link rel="canonical" href="https://dramitsharmaortho.com/blog" />
         <script type="application/ld+json">
-    {`
+          {`
       {
         "@context": "https://schema.org",
         "@type": "Person",
@@ -108,7 +107,7 @@ function Blog() {
         ]
       }
     `}
-  </script>
+        </script>
       </Helmet>
       {/* Hero Banner */}
       <div
@@ -129,7 +128,7 @@ function Blog() {
         <div className="relative z-10 h-full flex items-center justify-start">
           <div className="max-w-3xl px-6 md:px-20">
             <h1 className="text-white text-4xl md:text-5xl font-bold mb-4">
-              Best Orthopedic Blogs
+              Best Bone Doctor In Ghaziabad
             </h1>
             <p className="text-white text-lg md:text-xl mb-6">
               Stay informed with expert insights, recovery tips, and the latest

@@ -6,34 +6,34 @@ import { Helmet } from "react-helmet";
 function Osteoporosis() {
   return (
     <>
-   <Helmet>
-  <title>
-    Best Osteoporosis Treatment in Ghaziabad | Dr. Amit Sharma Ortho
-  </title>
-  <meta
-    name="description"
-    content="Get the best osteoporosis treatment in Ghaziabad from Dr. Amit Sharma. Specialized care for weak bones, fracture prevention, and long-term bone health."
-  />
-  <meta
-    name="keywords"
-    content="Best Osteoporosis Treatment in Ghaziabad, Bone Health Specialist in Indirapuram, Osteoporosis Treatment Doctor Ghaziabad"
-  />
-  <meta name="robots" content="index, follow" />
-  <meta name="googlebot" content="index, follow" />
-  <link
-    rel="canonical"
-    href="https://dramitsharmaortho.com/osteoporosis"
-  />
-  {/* JSON-LD Structured Data */}
-  <script type="application/ld+json">
-    {`
+      <Helmet>
+        <title>
+          Best Osteoporosis Treatment in Ghaziabad | Dr. Amit Sharma Ortho
+        </title>
+        <meta
+          name="description"
+          content="Get the best osteoporosis treatment in Ghaziabad from Dr. Amit Sharma. Specialized care for weak bones, fracture prevention, and long-term bone health."
+        />
+        <meta
+          name="keywords"
+          content="Best Osteoporosis Treatment in Ghaziabad, Bone Health Specialist in Indirapuram, Osteoporosis Treatment Doctor Ghaziabad"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://dramitsharmaortho.com/osteoporosis"
+        />
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {`
       {
         "@context": "https://schema.org",
         "@type": "MedicalClinic",
         "name": "Dr. Amit Sharma Orthopedic Clinic",
         "url": "https://dramitsharmaortho.com/osteoporosis",
         "image": "https://dramitsharmaortho.com/images/heroimage.webp",
-        "description": "Top-rated osteoporosis treatment in Ghaziabad by Dr. Amit Sharma. Strengthen bones, prevent fractures, and improve mobility with expert care.",
+        "description": "Best osteoporosis treatment in Ghaziabad by Dr. Amit Sharma. Strengthen bones, prevent fractures, and improve mobility with expert care.",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Indirapuram, Ghaziabad",
@@ -51,9 +51,8 @@ function Osteoporosis() {
         }
       }
     `}
-  </script>
-</Helmet>
-
+        </script>
+      </Helmet>
 
       {/* Hero Section */}
       <div className="relative w-full h-[500px] overflow-hidden">
@@ -204,7 +203,7 @@ function Osteoporosis() {
               <ul className="text-sm md:text-md font-bold divide-y divide-purple-500 text-center">
                 <li className="py-3">
                   <Link
-                    to="/service"
+                    to="/services"
                     className="hover:underline inline-block w-full"
                   >
                     View All Services by Dr. Amit Sharma

@@ -7,15 +7,15 @@ function HomeMeet() {
       className="bg-white py-16 px-4"
       aria-labelledby="meet-doctor-heading"
     >
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Image Section */}
         <figure className="w-full">
           <img
             src="/images/drsharma.webp"
             alt="Dr. Amit Sharma - Orthopedic Surgeon in Ghaziabad, expert in joint replacement and sports injuries"
             width={600}
-            height={400}
-            className="rounded-lg shadow-md w-full h-auto object-cover"
+            height={500}
+            className="rounded-lg shadow-md w-full mr-8 h-[460px] object-cover"
             loading="lazy"
             decoding="async"
           />
@@ -35,18 +35,27 @@ function HomeMeet() {
               Best Orthopedic Surgeon In Ghaziabad
             </span>
           </h3>
-          <p className="text-gray-700 mb-4 leading-relaxed text-[15.5px]">
+
+          <p className="text-gray-700 mb-4 leading-relaxed text-[15.5px] [text-align:justify]">
             With over 23 years of surgical experience, Dr. Amit Sharma is a
             renowned orthopedic specialist in Ghaziabad, known for his expertise
-            in joint replacement, arthroscopy, trauma surgery, and sports injuries.
-            His personal commitment to endurance sports like marathons and triathlons
-            deeply informs his patient-centric care.
+            in joint replacement, arthroscopy, trauma surgery, and sports
+            injuries. His personal commitment to endurance sports like marathons
+            and triathlons deeply informs his patient-centric care.
           </p>
 
-          <p className="text-gray-700 mb-6 text-[15.5px]">
+          <p className="text-gray-700 mb-4 text-[15.5px] [text-align:justify]">
             Dr. Sharma blends surgical precision with an athlete’s mindset,
             empowering patients to recover faster, move confidently, and live a
             pain-free life.
+          </p>
+
+          <p className="text-gray-700 mb-6 text-[15.5px] [text-align:justify]">
+            As the founder of one of Ghaziabad’s most trusted orthopedic
+            centers, he has transformed thousands of lives through innovative
+            treatments and compassionate care. His approach combines modern
+            medical science with personalized rehabilitation strategies,
+            ensuring long-term mobility and wellness for every patient.
           </p>
 
           <Link
@@ -63,6 +72,3 @@ function HomeMeet() {
 }
 
 export default HomeMeet;
-
-
-

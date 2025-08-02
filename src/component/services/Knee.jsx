@@ -86,7 +86,6 @@ function Knee() {
           </div>
         </div>
       </div>
-
       <div className="py-10 bg-white">
         <div className="max-w-7xl mx-auto lg:flex lg:gap-8 px-2 sm:px-4">
           <div className="lg:w-3/4 w-full">
@@ -141,7 +140,6 @@ function Knee() {
                       deterioration
                     </li>
                   </ul>
-
                   <h3 className="text-2xl font-semibold mb-4">
                     Partial Knee Replacement (PKR)
                   </h3>
@@ -158,7 +156,6 @@ function Knee() {
                     <li>✔️ Stable and healthy ligaments, especially the ACL</li>
                     <li>✔️ Adequate bone strength to support implants</li>
                   </ul>
-
                   <p className="text-3xl font-semibold mb-4">
                     Surgical Process
                   </p>
@@ -225,7 +222,7 @@ function Knee() {
               <ul className="text-sm md:text-md font-bold divide-y divide-purple-500 text-center">
                 <li className="py-3">
                   <Link
-                    to="/service"
+                    to="/services"
                     className="hover:underline inline-block w-full"
                     aria-label="View All Services"
                   >
